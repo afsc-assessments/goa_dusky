@@ -1,0 +1,88 @@
+run_name
+Std
+Tier
+7
+nalts
+1
+alt_list
+ 2
+TAC_ABC
+3
+SrType
+4
+Rec_Gen
+5
+Fmsy_F35
+6
+Rec_Cond
+7
+Write_Big
+1
+npro
+1
+nsims
+1
+styr
+0
+bzero_in
+4.91898e-317
+phizero_in
+3.95253e-323
+alpha_in
+6.95198e-310
+sigmar_in
+1.4822e-323
+rho_in
+6.95198e-310
+nyrs_catch_in
+2
+nspp
+1
+OY_min
+0
+OY_max
+1
+spp_file_name
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ABC_Multiplier
+ 0
+N_scalar
+ 0
+Alt4_SPR
+ 0
+ntacspp
+1
+tac_ind
+ 1
+Obs_Catch
+ 2 0
+ 2 0
+maxabc
+ 1
+theta
+ 1
+ 1
+ 1
+ 1
+ 1
+ 1
+ 0
