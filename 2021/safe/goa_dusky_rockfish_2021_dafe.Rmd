@@ -1,0 +1,52 @@
+---
+title: "GOA Dusky Rockfish - Partial assessment"
+author: "Ben Williams"
+date: ""
+output: powerpoint_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+
+## Dusky Rockfish
+
+- Tier 3a species
+  - Only catches updated for projection model
+- Catch update
+  - Final 2020 catch (2,198 t)
+  - Estimated catches for 2021-2023
+- Recommended 2021 ABC: 5,372 t
+  - Lower than 2020 ABC: 5,389 t 
+
+
+## Dusky Rockfish - Exploitation rate
+
+```{r fig1}
+
+knitr::include_graphics(here::here("2021", "figs", "catch_bio_pres.png"))
+```
+
+
+## Dusky Rockfish - Apportionment
+
+
+```{r, results='asis'}
+options(knitr.kable.NA = '')
+data.frame(Year = rep(c(2022, 2023), each = 2), 
+           Measure = rep(c("ABC", "OFL"), 2),
+           Western = scales::comma(c(269, NA, 259, NA)),
+           Central = scales::comma(c(4534, NA, 4373, NA)),
+           Eastern = c(569, "", 549, ""),
+           Total = scales::comma(c(5372, 8614, 5181, 8146))) %>% 
+  knitr::kable(align = "lccccc")
+
+```
+
+## 2021 Survey
+
+```{r fig2}
+
+knitr::include_graphics(here::here("2021", "figs", "ts_biomass_pres.png"))
+```

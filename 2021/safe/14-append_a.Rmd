@@ -1,0 +1,13 @@
+# Appendix 12a. Supplemental projection data 
+
+\begin{center}
+\begin{tabular}{lccccccc|}
+\hline
+
+\hline
+
+
+
+\hline
+\end{tabular}
+\end{center}

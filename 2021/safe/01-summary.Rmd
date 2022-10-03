@@ -1,0 +1,182 @@
+# Executive summary 
+
+Gulf of Alaska dusky rockfish (*Sebastes variabilis*) have historically been assessed on a biennial stock assessment schedule to coincide with the availability of new trawl survey data (odd years). 
+In 2017, the Alaska Fisheries Science Center (AFSC) participated in a stock assessment prioritization process. 
+It was recommended that the Gulf of Alaska (GOA) dusky rockfish remain on a biennial stock assessment schedule with a full stock assessment produced in even years and a partial stock assessment produced in odd years. 
+For a partial assessment, the projection model is updated with new catch information and results are used to recommend harvest levels for the next two years. 
+This incorporates the most current catch information without re-estimating model parameters and biological reference points.
+
+The GOA dusky rockfish is classified as a Tier 3 stock and is assessed using a statistical age-structure model.
+This assessment consists of a population model, which uses survey and fishery data to generate a historical time series of population estimates, and a projection model, which uses results from the population model to predict future population estimates and recommended harvest levels. 
+The data used in this assessment includes total catch biomass, fishery age and size compositions, trawl survey abundance estimates, and trawl survey age compositions. 
+
+
+\allsectionsfont{\raggedright}
+## Summary of Changes in Assessment Inputs
+*Changes in the input data:* There were no changes made to the assessment model inputs as this is an off-cycle year. 
+New data added to the projection model included updated catch data from `r year-1` (`r filter(catch, Year == year-1) %>% pull(Catch) %>% prettyNum(., big.mark = ",", digits = 0)` t) and new estimated catches for `r year`-`r year + 2`. 
+Catch data were queried on `r data_pull`. 
+The `r year` catch was estimated by increasing the observed catch by an expansion factor of `r yld %>% pull(catch_rat) %>% round(., 3)`, which accounts for the average fraction of catch taken after `r data_pull2` in the last three complete years (`r year - 3`-`r year-1`). 
+This expansion factor decreased from last year’s expansion factor of 1.052 and resulted in an estimated catch for `r year` of `r filter(catch, Year == year) %>% pull(Catch) %>% prettyNum(., big.mark = ",", digits = 0)` t. 
+To estimate future catches, we updated the yield ratio to `r yld %>% pull(yld) %>% round(., 2)`, which was the average ratio of catch to ABC for the last three complete catch years (`r year - 3`-`r year-1`). 
+This yield ratio was multiplied by the projected ABCs from the updated projection model to generate catches of 4,725 t in `r year + 1` and 4,337 t in `r year + 2`.
+
+
+
+*Changes in assessment methodology:* There were no changes from the 2020 assessment [@Fenske2020] as this was an off-cycle year.
+
+\allsectionsfont{\raggedright}
+## Summary of Results
+*ABC recommendation*  
+For the `r year + 1` fishery, we recommend a maximum allowable ABC of `r maxABC %>% prettyNum(., big.mark = ",", digits = 0)` t from the updated projection model. 
+A "stair step" methodology was requested by the SSC that specifies the ABC be set halfway between the 2020 ABC (3,676 t) and `r year+1` model estimated maximum ABC.
+This results in an adjusted ABC of 5,372 t. 
+The 2022 GOA-wide OFL is decreased from last year’s expansion factor of 1.052 and resulted in an estimated catch for `r year` of `r ofl %>% prettyNum(., big.mark = ",", digits = 0)` t.
+
+
+The stock is not being subject to overfishing, is not currently overfished, nor is it approaching a condition of being overfished. 
+The test for determining whether overfishing is occurring is based on the `r year -1` catch compared to OFL. 
+The official total catch for `r year -1` is `r filter(catch, Year == year-1) %>% pull(Catch) %>% prettyNum(., big.mark = ",", digits = 0)` t which is less than the `r year-1` OFL of 8,655 t; therefore, the stock is not being subjected to overfishing. 
+The tests for evaluating whether a stock is overfished or approaching a condition of being overfished require examining model projections of spawning biomass relative to $B_{35\%}$ for `r year + 1` and `r year + 2`. 
+The estimates of spawning biomass for `r year + 1` and `r year + 2` from the current year projection model are 38,371 t and 36,853 t, respectively. 
+Both estimates are above the $B_{35\%}$ estimate of 21,299 t and, therefore, the stock is not currently overfished nor approaching an overfished condition.
+
+Reference values for dusky rockfish are summarized in the following table, with the recommended ABC and OFL values in bold.
+
+\begin{center}
+\begin{tabular}{ |lcccc|}
+\hline
+ & \multicolumn{2}{c}{\cellcolor[gray]{0.9} As estimated or} & 
+    \multicolumn{2}{c|}{As estimated or}\\
+ & \multicolumn{2}{c}{\cellcolor[gray]{0.9} specified \emph{last} year for:} & 
+    \multicolumn{2}{c|}{specified \emph{this} year for:}\\
+    
+ \textbf{Quantity/Status}   & \cellcolor[gray]{0.9} 2021 & \cellcolor[gray]{0.9} 2022 & \multicolumn{1}{c}{2022*} & 2023*\\ 
+ \hline
+    M (natural mortality)   & \cellcolor[gray]{0.9} 0.07 &\cellcolor[gray]{0.9} 0.07& 0.07& 0.07\\
+    Tier                    & \cellcolor[gray]{0.9}3a & \cellcolor[gray]{0.9}3a & 3a & 3a\\
+    Projected total (age 4+) biomass (t) & \cellcolor[gray]{0.9}97,702 & \cellcolor[gray]{0.9}98,825 & 95,682 & 92,310\\
+    Projected female spawning biomass (t) & \cellcolor[gray]{0.9}38,362 & \cellcolor[gray]{0.9}37,530 & 38,371 & 36,853\\
+    $B_{100\%}$       & \cellcolor[gray]{0.9} 60,855 & \cellcolor[gray] {0.9} 60,855 & 60,855     & 60,855  \\
+    $B_{40\%}$        & \cellcolor[gray]{0.9} 24,342 & \cellcolor[gray] {0.9} 24,342 & 24,342     & 24,342  \\
+    $B_{35\%}$        & \cellcolor[gray]{0.9} 21,299 & \cellcolor[gray] {0.9} 21,299 & 21,299     & 21,299  \\
+    $F_{OFL}$         & \cellcolor[gray]{0.9} 0.114  & \cellcolor[gray] {0.9} 0.114  & 0.114      & 0.114   \\
+    $maxF_{ABC}$      & \cellcolor[gray]{0.9} 0.093  & \cellcolor[gray] {0.9} 0.093  & 0.093      & 0.093   \\
+    $F_{ABC}$         & \cellcolor[gray]{0.9} 0.093  & \cellcolor[gray] {0.9} 0.093  & 0.093      & 0.093   \\
+    OFL               & \cellcolor[gray]{0.9} 8,655  & \cellcolor[gray] {0.9} 8,423  & \bf{`r ofl %>% prettyNum(., big.mark = ",", digits = 0)`} & 8,146   \\
+    maxABC (t)        & \cellcolor[gray]{0.9} 7,101  & \cellcolor[gray] {0.9} 6,913  & \bf{`r maxABC %>% prettyNum(., big.mark = ",", digits = 0)`} & 6,686   \\
+    ABC (t)           & \cellcolor[gray]{0.9} 5,389  & \cellcolor[gray] {0.9} 5,295  & \bf{5,372} & 5,181   \\
+ \hline     
+\bf{Status}  & \multicolumn{2}{c}{\cellcolor[gray]{0.9} As determined} & 
+    \multicolumn{2}{c|}{As determined} \\
+ & \multicolumn{2}{c}{\cellcolor[gray]{0.9} \emph{last} year for:} & 
+     \multicolumn{2}{c|}{\emph{this} year for:}\\
+ & \cellcolor[gray]{0.9} 2019 & \cellcolor[gray]{0.9} 2020 & 2020 & 2021\\ 
+ \hline       
+    Overfishing             & \cellcolor[gray]{0.9} No   & \cellcolor[gray]{0.9} n/a & No  & n/a  \\
+    Overfished              & \cellcolor[gray]{0.9} n/a  & \cellcolor[gray]{0.9} No  & n/a & No   \\
+    Approaching overfishing & \cellcolor[gray]{0.9} n/a  & \cellcolor[gray]{0.9} No  & n/a & No   \\
+\hline
+\multicolumn{5}{l}{\footnotesize *Projections are based on an estimated catch of 2,986 t for 2021, and estimates of 4,725 t and 4,337 t used \par}\\
+\multicolumn{5}{l}{\footnotesize in place of maximum permissible ABC for 2022 and 2023.\par}\\
+
+\end{tabular}
+\end{center}
+
+```{r, child=c("02-table.Rmd"), eval = FALSE}
+
+```
+
+*Fishery trends*  
+
+Catch data for dusky rockfish in the GOA were updated as of `r data_pull` (NMFS Alaska Regional Office Catch Accounting System via the Alaska Fisheries Information Network [AKFIN] database, www.akfin.org). 
+The dusky rockfish catch/biomass ratio has ranged from 0.02-0.06 since 1991 (Figure \@ref(fig:fig1)).
+The `r year` projected exploitation rate (catch/biomass ratio) is a 38\% difference (increase) from the `r year -1` value.
+To calculate this exploitation rate, observed catches through `r year-1` and estimated catches for `r year` are divided by age 4+ biomass estimates. 
+Biomass from 1991-`r year-1` are from the 2020 full stock assessment and the estimate for `r year` is from the `r year` projection model. 
+The approximate 95\% confidence intervals are calculated assuming a normal distribution with standard errors estimated in the 2020 full stock assessment for 1991-`r year-1` and a coefficient of variation in 2021 that is assumed the same as the estimate in the terminal year of the 2020 full assessment. 
+
+
+*Survey trends*
+
+For informational purposes, updated trends from the `r year` bottom trawl survey are presented here for both a geostatistical model and a design-based model. 
+A geostatistical model was approved for use in the dusky rockfish assessment model in 2015 for estimating survey biomass. 
+This geostatistical model estimates a 69% increase in biomass from the 2019 survey (Figure \@ref(fig:fig2)) and is above the long term mean.
+
+\allsectionsfont{\raggedright}
+## Area Allocation of Harvest
+The following table shows the recommended ABC apportionment for `r year+1` and `r year+2`. 
+The apportionment percentages are the same as in the last full assessment. 
+Please refer to the 2020 full stock assessment report [@Fenske2020] for information regarding the apportionment rationale for GOA dusky rockfish.
+
+\begin{center}
+\begin{tabular}{ lcccc}
+\hline
+
+ & Western & Central & Eastern & Total \\
+ Area Apportionment & 5\% & 84.4 \% & 10.6\% & 100\% \\
+ \hline
+ 2022 Area ABC (t) & 269 & 4,534 & 569 & 5,372 \\
+ 2022 OFL (t) &  & & & `r ofl %>% prettyNum(., big.mark = ",", digits = 0)` \\
+ 2023 Area ABC (t) & 259 & 4,373 & 549 & 5,181 \\
+ 2023 OFL (t) &  & & & 8,146 \\
+
+\hline
+\end{tabular}
+\end{center}
+
+Amendment 41 prohibited trawling in the Eastern area east of 140° W longitude. 
+The ratio of biomass still obtainable in the W. Yakutat area (between 147° W and 140° W) is 0.75. 
+This results in the following apportionment to the W. Yakutat area:
+
+
+\begin{center}
+\begin{tabular}{lcc}
+\hline
+
+ & W. Yakutat & E. Yakutat/Southeast \\
+ \hline
+ 2022 Area ABC (t) & 427 & 142 \\
+ 2023 Area ABC (t) & 412 & 137 \\
+
+\hline
+
+\end{tabular}
+\end{center}
+
+\allsectionsfont{\raggedright}
+## Summaries for Plan Team
+
+\begin{center}
+\begin{tabular}{lcccccc}
+\hline
+
+Stock    & Year & Biomass$^1$ & OFL & ABC & TAC & Catch \\
+\hline
+         & 2020 & 54,626 & 4,492 & 3,676 & 3,676 & 2,198\\
+Dusky    & 2021 & 97,702 & 8,655 & 5,389 & 5,389 & 2,902$^2$\\
+Rockfish & 2022 & 97,767 & `r ofl %>% prettyNum(., big.mark = ",", digits = 0)` & 5,372 & & \\
+         & 2023 & 95,682 & 8,146 & 5,181 & & \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{lr|rrrr|rr|rr}
+\hline
+          &           & \multicolumn{4}{c}{2021} & \multicolumn{2}{|c}{2022} & \multicolumn{2}{|c}{2023}  \\ 
+Stock & Area      & OFL & ABC & TAC & Catch$^2$ & OFL & ABC & OFL & ABC \\
+\hline
+      & W         &      & 270   & 270   & 144   &       & 269   &       & 259 \\
+Dusky & C         &      & 4,548 & 4,548 & 2,727 &       & 4,534 &       & 4,373 \\
+Rockfish  & WYAK &      & 468   & 468   & 30    &       & 427   &       & 412 \\
+     & EYAK/SEO   &      & 103   & 103   & 1     &       & 142   &       & 137 \\
+     & Total     & 8,655 & 5,389 & 5,389 & 2,902 & `r ofl %>% prettyNum(., big.mark = ",", digits = 0)` & 5,372 & 8,146  & 5,181 \\     
+     
+\hline
+\multicolumn{10}{l}{\footnotesize $^1$Total biomass (age 4+) estimates from age-structured model.} \\
+\multicolumn{10}{l}{\footnotesize $^2$Current as of October 22, 2021. Source: NMFS Alaska Regional Office Catch Accounting System} \\
+\multicolumn{10}{l}{\footnotesize via the AKFIN database (http://www.akfin.org).} \\
+\end{tabular}
+\end{center}
+
