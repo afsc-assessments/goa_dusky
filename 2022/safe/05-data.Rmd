@@ -1,0 +1,120 @@
+# Data
+
+The following table summarizes the data used in the stock assessment model for dusky rockfish (* denotes new data for this assessment):
+
+```{r}
+
+data.frame(Source = c(rep("NMFS Groundfish survey", 2),
+                      rep("U.S. trawl fishery", 3)),
+           Data = c("Survey biomass",
+                    "Age composition",
+                    "Catch",
+                    "Age composition",
+                    "Length composition"),
+           Years = c("1990-1999 (triennial), 2001-2021* (biennial)",
+                     "1990-1999 (triennial), 2003-2019 (biennial), 2021*",
+                     "1961-2020, 2021-2022*",
+                     "1998-2002, 2004-2006, 2008-2018 (biennial), 2020*",
+                     "1991-1997, 2003, 2007-2019 (biennial), 2021*"))  %>% 
+  flextable::flextable() %>% 
+  flextable::width(j = ~ Source, width = 1) %>% 
+  flextable::width(j = ~ Data, width = 1.5) %>% 
+  flextable::width(j = ~ Years, width = 4) %>% 
+  flextable::merge_v(j = 1) %>% 
+  flextable::font(fontname = "Times", part = "all") %>% 
+  flextable::fontsize(size = 10) %>% 
+  flextable::theme_vanilla() %>% 
+  flextable::fix_border_issues() 
+
+```
+
+## Fishery
+
+### Catch
+
+Catch estimates are a combination of foreign observer data, joint venture catch data, and NMFS Regional Office blend data. 
+Catch estimates for dusky rockfish are available from 1977 to `r year` **(Table 12-\@ref(tbl:catch), Figure 12-\@ref(fig:fcatch)**. 
+Catches range from 17 t in 1986 to 4,535 t in 1999. 
+We are skeptical of the low catches that occurred prior to 1988 and believe the catches for years 1985-1987 are likely underestimated. 
+These catches occurred during the end of the joint venture years and prior to accurate catch accounting of the newly formed domestic fishery.
+
+### Age and Size Composition
+
+Observers aboard fishing vessels and at onshore processing facilities have collected samples for evaluating size and age compositions of the commercial catch of northern rockfish. 
+Ages were determined from the break-and-burn method [@Chilto1982]. 
+Length compositions are presented in Table 10-6 and Figure 10-2 and age compositions are presented in Table 10-7 and Figure 10-3; these tables also include associated annual sample sizes and number of hauls sampled for the age and length compositions. 
+The fishery age compositions indicate that stronger than average year-classes occurred around the year 1976 and 1984. 
+The fishery age compositions from 2004 and 2006 also indicate that the 1996-1998 year-classes were strong. 
+The clustering of several large year-classes in each period is most likely due to aging error. 
+Recent fishery length compositions (2003-present) indicate that a large proportion of the northern rockfish catch are found to be larger than 38 cm, which was the previous plus length bin.
+
+Length frequency data for dusky rockfish in the commercial fishery are available for the years 1991-`r year-1` but are only used in the model when age compositions are not expected to be available for that year (Table 12-\@ref(tbl:szcomp). 
+These data are the raw length frequencies for all dusky rockfish measured by observers in a given year. 
+Generally, these lengths were taken from hauls in which dusky rockfish were either the target or a dominant species, and they provide an indication of the trend in size composition for the fishery. 
+The relatively small sample sizes in 1995 and 1996 should be treated with caution as all years, though they are included in these analyses. 
+**Size of fish taken by the fishery generally appears to have increased after 1992; in particular, the mode increased from 42 cm in 1991-92 to 44-46 cm in 1993-2019.** 
+Fish smaller than 40 cm are seen in moderate numbers in certain years **ref (1991-92, 1997, and 2017-2019, Figure 12-\@ref(fig:fszcomp)), but it is unknown if this is an artifact of observer sampling patterns, or if it shows true influxes of younger fish or a decrease in older fish.**
+
+**Age samples for dusky rockfish have been collected by observers in the 1999-`r year` commercial fisheries. 
+Aging has been completed for the 2000--`r year-2` samples **ref (Table 12-7)**. 
+Similar to the fishery length data discussed in the preceding paragraph, the data in **Table 12-7** depicts the raw age distribution of the samples, and we did not attempt any further analysis to estimate a more comprehensive age composition. 
+However, the samples were randomly collected from fish in over 100 hauls that had large catches of dusky rockfish, therefore the raw distribution is likely representative of the true age composition of the fishery. 
+Fish ranged in age from 4 to 66 years. 
+**The mode has decreased recently from 14-15 years old in 2012-2016 to 11 years old in 2018.** 
+**Several large and relatively steady year classes are evident through the time series including 1986, 1992, 1995, and 1999 ref (Figure 12-2).**
+
+## Survey
+
+### Biomass Estimates from Trawl Surveys
+
+Comprehensive trawl surveys were conducted on a triennial basis in the GOA from 1984--1999, and biennially since 2001 **ref (Table 12-8)**.
+Dusky rockfish were separated into “light” and “dark” varieties in surveys since 1996 and starting in 2004 labeled as dusky and dark rockfish. 
+Each of these surveys has shown that dusky rockfish (light dusky) overwhelmingly predominate and that dark rockfish (dark dusky) are caught in small quantities. 
+Presumably, the dusky rockfish biomass in surveys previous to 1996 was predominately light dusky rockfish.
+The 1984 and 1987 surveys were completed using different vessels, net design, and sampling protocols so have been excluded from this assessment. 
+
+The spatial distribution of the catches of dusky rockfish in the `r year-5`, `r year-3`, and `r year-1` surveys are shown in Figure 12-\#ref(fig:fcpue). 
+The magnitude of catch varies greatly with several large tows typically occurring in each survey. 
+It is unknown whether these fluctuations indicate true changes in abundance, temporal changes in the availability of dusky rockfish to the survey gear, or are an artifact of the imprecision of the survey for this species. 
+**In the `r year-1` survey, catches of dusky rockfish were highest in the central GOA, but some consistent, lower catch trawls were also observed in both the western and eastern GOA. 
+An increase in trawl survey catches was observed in all statistical areas except the Shumagin Islands area, which were high in `r year-3` and historically have seen infrequent, high survey catches.**
+
+**MENTION VAST**
+
+### Age and Size Composition 
+
+#### Age 
+
+*UPDATE* 
+
+Gulf-wide age composition data for dusky rockfish are available for the 1990 through `r year-1` trawl surveys (Table 12-\@ref(tbl:tsage)). 
+**The mode of the age data has been generally increasing from 11 years in 1987 to 15 years in 2015 and recently decreased to 10-11 years in 2017-2019.** 
+Similar to the length data, these age data also indicate that strong recruitment is infrequent. 
+For each survey, ages were determined using the “break-and-burn” method of aging otoliths, and a Gulf-wide age-length key was developed. 
+The key was then used to estimate age composition of the dusky rockfish population in the GOA. 
+The 1976 year class appeared to be abundant in the early surveys, especially 1984 **ref (Figure 12-5)**. 
+The 1986 year class appeared strong in the 1993, 1996, and perhaps the 1999 surveys. 
+Because rockfish are difficult to age, especially as the fish grow older, one possibility is that some of the fish aged 12 in 1999 were actually age 13 (members of the 1986 year class), which would agree more with the 1993 and 1996 age results. 
+Little recruitment occurred in the years following until the 1992 and 1995 year classes appeared. 
+The only prominent year class until the most recent survey was the 1998 year class, which had the highest proportion of ages sampled in the 2013 survey. 
+In 2019, there appears to be some evidence for a potentially stronger year classes in approximately 2010.
+
+#### Size
+
+*UPDATE* 
+
+Gulf-wide survey size compositions are available for 1984-2019 (**ref Table 12-10; Figure 12-17**). 
+Survey size compositions suggest that strong recruitment of dusky rockfish is a relatively infrequent event, as only three surveys, 1993, 2001, 2003, and potentially 2009 showed evidence of substantial recruitment. 
+Mean population length increased from 39.4 cm in 1987 to 43.1 cm in 1990. 
+In 1993, however, a large number of small fish (~27-35 cm long) appeared which formed a sizeable percentage of the population, and this recruitment decreased the mean length to 38.3 cm. 
+In the 1996 and 1999 surveys, the length frequency distribution was similar to that of 1990, with very few small fish, and both years had a mean population length of 43.9 cm. 
+The 2001 size composition, although not directly comparable to previous years because the Eastern GOA was not sampled, shows modest recruitment of fish <40 cm. 
+In 2003, a distinct mode of fish is seen at ~30 cm that suggests relatively strong recruitment may have occurred, and this is supported again in 2005 with a distinct mode starting at ~37 cm. 
+Sample sizes have remained stable varying from 1,113 lengths taken in 1990 to 3,383 in 2005. 
+Survey length compositions are used in estimating the length-age conversion matrix and in estimating the population age composition, but are not used as an additional compositional time series because survey ages are available from those same years and are used in the model except for the most recent year.
+
+### Maturity Data
+
+**make more robust - update papers**
+
+Maturity-at-age data for female dusky rockfish maturity are from Lunsford (pers. comm. July 1997) and [@Chilton2010].

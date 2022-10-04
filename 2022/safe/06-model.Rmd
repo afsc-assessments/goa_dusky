@@ -1,0 +1,118 @@
+# Analytical approach
+
+## General Model Structure
+
+We present model results for dusky rockfish based on an age-structured model using AD Model Builder software [@Fournier2012]. 
+The assessment model is based on a generic rockfish model developed in a workshop held in February 2001 [@Courtney2007] and is similar to the GOA Pacific ocean perch and northern rockfish models [@Hanselman2007a; @Courtney1999]. 
+In 2003, biomass estimates from an age-structured assessment model were first accepted as an alternative to trawl survey biomass estimates. 
+As with other rockfish age-structured models, this model does not attempt to fit a stock-recruitment relationship but estimates a mean recruitment, which is adjusted by estimated recruitment deviations for each year. 
+We do this because there does not appear to be an obvious stock-recruitment relationship in the model estimates, and there have been very high recruitments at low stock size (Figure 12-\@ref(fig:frec)).
+The parameters, population dynamics, and equations of the model are in Box 1.
+
+
+```{r}
+knitr::include_graphics(here::here(year, 'safe', 'images', 'box1.png'))
+knitr::include_graphics(here::here(year, 'safe', 'images', 'box2.png'))
+knitr::include_graphics(here::here(year, 'safe', 'images', 'box3.png'))
+```
+
+
+## Description of Alternative Models
+
+>Description of alternative models included in the assessment, if any (e.g., alternative M values or likelihood weights); note that the base model (i.e., the model most recently accepted by the SSC, either after reviewing the previous year’s final assessment or the current year’s preliminary assessment) must be included
+Per recommendation of the SSC (10/15), please use the following convention for numbering models:
+When a model constituting a “major change” from the original version of the base model is introduced, it is given a label of the form “Model *yy.j*,” where *yy* is the year (designated by the last two digits) that the model was introduced, and *j* is an integer distinguishing this particular “major change” model from other “major change” models introduced in the same year.
+When a model constituting only a “minor change” from the original version of the base model is introduced, it is given a label of the form “Model *yy.jx*,” where *x* is a letter distinguishing this particular “minor change” model from other “minor change” models derived from the original version of the same base model.
+Specifically, please use one of the following four options to distinguish “major” from “minor” changes:
+
+>*Option A*  
+The original version of the base model is the base model from the earliest year relative to which the current base model constitutes only a minor change. 
+If Model *yy.j* is the original version of the base model and some other model (provisionally labeled “Model *M*”) is introduced in year 20zz, define the “average difference in spawning biomass” (ADSB) between Model *M* and Model *yy.j* as:
+
+$$ ADSB = \sqrt{\sum^{2000+yy}_{y=1977}\frac{(SB_{Model M,y} / SB_{Model yy.j.y} - 1)^2}{yy + 24}}, $$
+
+>where both models are run with data through year 20*yy* only (i.e., the year in which the original version of the base model was introduced).  If ADSB<0.1, the final name of Model *M* should be of the form *Model yy.jx*, where *x* is a letter.  If ADSB≥0.1, the final name should be of the form *Model zz.i*, where *i* is an integer.  For Tiers 4-5, survey biomass may be used in place of spawning biomass in the above.
+
+>*Option B*  
+Same as Option A, except that the model approved by the SSC in 2014 is considered to be the original version of the base model in all cases.  **The SSC noted that Option B can be used if Option A “poses a significant time commitment for the analyst.”**
+
+>*Option C*  
+Same as Option A, except that the distinction between “major” and “minor” model changes is determined subjectively by the author on the basis of qualitative differences in model structure rather than the performance-based criterion described in Option A.  The SSC noted that Option C can be used “where needed.”
+
+>*Option D*  
+Options B and C combined.
+
+
+## Parameters Estimated Outside the Assessment Model
+
+Parameters fit outside the assessment model include the life-history parameters for weight-at-age, ageing error matrices, and natural mortality. 
+Length-weight information for dusky rockfish is derived from data collected from GOA trawl surveys from 1990-2021, with a total sample size of **9,487**. 
+A von Bertalanffy growth curve was fitted to survey size at age data from 1984-2017 using length-stratified methods [@Quinn1999; @Bettoli2001] for both sexes combined. 
+An age to size conversion matrix was then constructed by adding normal error with a standard deviation equal to the survey data for the probability of different sizes for each age class. 
+The estimated parameters for the growth curve from length-stratified methods were:
+
+$L_\infty$= 55.004, $\kappa$ = 0.124, $t_0$ = -0.072
+
+
+Weight-at-age was constructed with weight at age data from the same data set as the length at age. 
+Mean weight-at-age is approximated by the equation: $W_a=W_\infty (1-e^(-\kappa(a-t_0 ) ) )^b$. 
+The estimated growth parameters from length-stratified methods were:
+
+W_\infty$= 1962 g,  $\kappa$ = 0.185, $t_0$ = 0.556, $b$ = 3.0
+
+Ageing error matrices were constructed by assuming that the break-and-burn ages were unbiased but had normally distributed age-specific error based on between-reader percent agreement tests conducted at the AFSC Age and Growth lab for dusky rockfish. 
+In past assessments the ageing error matrix was constructed by assuming the same age determination error used for northern rockfish [@Courtney1999].
+
+
+Prior to 2007, the natural mortality rate used for dusky rockfish was 0.09. 
+Questions about the validity of the high natural mortality rate of dusky rockfish versus other similarly aged rockfish were raised in previous stock assessments [@Lunsford2007]. 
+In 2007, the natural mortality rate was changed to 0.07 based on an estimate calculated by @Malecha2007 using updated data. 
+This method used the @Hoenig1983 empirical estimator for natural mortality based on maximum lifespan. 
+Based on the highest age recorded in the trawl survey of 59 this estimate is 0.08. 
+The highest recorded age in the fishery ages was 76, which equates to a Hoenig estimate of 0.06. 
+The current natural mortality estimate used in this assessment (0.07) is comparable to other similarly aged rockfish in the GOA.
+
+## Parameters Estimated Inside the Assessment Model
+
+Maturity-at-age is modeled with the logistic function which estimates parameters for maturity-at-age conditionally. 
+Parameter estimates for maturity-at-age are obtained by combining data collected on female dusky rockfish maturity from Lunsford (pers. comm. July 1997) and @Chilton2010. 
+The binomial likelihood is used in the assessment model as an additional component to the joint likelihood function to fit the combined observations of female dusky rockfish maturity [e.g., @Quinn1999]. 
+The binomial likelihood was selected because (1) the sample sizes for maturity are small and assuming convergence to the normal distribution may not be appropriate in this case, (2) the binomial likelihood inherently includes sample size as a weighting component, and, (3) resulting maturity-at-age from the normal likelihood (weighted by sample size) was very similar to maturity-at-age obtained with the binomial likelihood.
+
+The fit to the combined observations of maturity-at-age obtained in the preferred assessment model is shown in **Figure 12-\@ref(fig:mat)**. 
+Parameters for the logistic function describing maturity-at-age estimated conditionally in the model, as well as all other parameters estimated conditionally, were identical to estimating maturity-at-age independently. 
+Estimating maturity-at-age parameters conditionally influences the model only through the evaluation of uncertainty, as the MCMC procedure includes variability in the maturity parameters in conjunction with variability in all other parameters, rather than assuming the maturity parameters are fixed. 
+Thus, estimation of maturity-at-age within the assessment model allows for uncertainty in maturation to be incorporated into uncertainty for key model results (e.g., ABC). 
+
+**DOUBLECHECK The age at 50% maturity is estimated to be 10.3.  Using the parameters from the von Bertalanffy growth model the size at 50% maturity is 40.6 cm.**
+Other parameters estimated conditionally in the current model include, but are not limited to: logistic parameters for selectivity for both the survey and fishery, mean recruitment, fishing mortality, spawner-per-recruit levels, and logistic parameters for maturity. 
+The numbers of estimated parameters are shown below. 
+Other derived variables are described in the *General Model Structure* section.
+
+```{r, eval = T}
+
+
+data.frame(Parameter = c("Catchability", "Log mean recruitment", "Recruitment variability", "Spawners per recruit levels",
+                   "Recruitment deviations", "Average fishing mortality", "FIshing mortality deviations", 
+                   "Logistic fishery selectivity", "Logistic survey selectivity", "Logistic maturity at age", "Total"),
+                      # symbol = c("F_{rr}"),
+           Symbol = c("q", "\\mu_r", "\\sigma_r", "F_{35\\%},~F_{40\\%},~F_{50\\%}", "\\tau_y", "\\mu_f", "\\phi_y", "a_{f50\\%}, \\gamma_f", "a_{s50\\%}, \\gamma_s", "a_{m50\\%}, \\gamma_m", "" ),
+           Number = c(1, 1, 1, 3, 69, 1, 46, 2, 2, 2, 128)) %>% 
+  flextable::flextable() %>% 
+  flextable::compose(j="Symbol", value=flextable::as_paragraph(flextable::as_equation(Symbol))) %>% 
+  flextable::width(j=1, width=3) %>% 
+  flextable::width(j=2, width=2) %>% 
+  flextable::align(j=2, part='header', align='center') %>% 
+  flextable::height(height=0.15, part='body') %>% 
+  flextable::hrule(rule='exact', part='body') %>% 
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+    flextable::fontsize(size = 11, part = "all") 
+```
+
+Evaluation of model uncertainty is obtained through a Markov Chain Monte Carlo (MCMC) algorithm [@Gelman1995]. 
+The chain length of the MCMC was 10,000,000 and was thinned to one iteration out of every 2,000. 
+We omit the first 1,000,000 iterations to allow for a burn-in period. 
+We use these MCMC methods to provide further evaluation of uncertainty in the results below including 95% credible intervals for some parameters (computed as the 5^th^ and 95^th^ percentiles of the MCMC samples).
+
+
+

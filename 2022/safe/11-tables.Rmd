@@ -1,0 +1,37 @@
+# Tables
+
+```{r mgmt}
+
+catch %>% 
+  dplyr::left_join(vroom::vroom(here::here(year, "data", "user_input", "abc_tac.csv"))) %>% 
+  dplyr::mutate(perc_tac = round(Catch / TAC * 100)) %>%  
+  dplyr::select(Year, Catch, ABC, TAC, OFL, `% TAC` = perc_tac, `Management measure` = measure) %>% 
+flextable::flextable() %>%
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  flextable::fontsize(size = 10, part = "all") %>% 
+  # flextable::compose(j = 6, value = flextable::as_paragraph("Management measure"), part = "header") %>% 
+  flextable::align(j=1, part = 'all') %>% 
+  flextable::colformat_double(j=1, 
+                           big.mark = "",
+                           digits=0) %>% 
+    flextable::colformat_double(j=2:5, 
+                           digits=0) %>% 
+  flextable::width(j=1:5, width=0.3) %>%
+  flextable::width(j=7, width=4) %>%
+  # flextable::fit_to_width(max_width = 6) %>% 
+  flextable::border_remove() %>%
+  flextable::hline_top(part = "header") %>%
+  flextable::hline_top() %>% 
+  flextable::hline_bottom() %>% 
+flextable::set_caption("Commercial catch (t) of dusky rockfish in the Gulf of Alaska, with Gulf-wide values of acceptable biological catch (ABC), total allowable catch (TAC), overfishing level (OFL), the percent of TAC harvested (% TAC) and a summary of key management measures for pelagic shelf rockfish and dusky rockfish in the Gulf of Alaska. Units in metric tons.")
+```
+
+\pagebreak
+
+```{r fmp-bycatch}
+flextable::regulartable(data.frame(year = 1999:2000,
+                 catch = 1:2)) %>%  
+      flextable::set_caption("Incidental catch of FMP groundfish species caught in rockfish targeted fisheries in the Gulf of Alaska from 2016-2020. Source: NMFS AKRO Blend/Catch Accounting System via AKFIN 10/11/2020. Conf. = Confidential because of less than three vessels.")
+```
+
+\pagebreak

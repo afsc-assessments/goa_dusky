@@ -1,0 +1,54 @@
+# Executive Summary 
+
+Figure \@ref(fig:pressure)
+
+The GOA dusky rockfish is classified as a Tier 3 stock and is assessed using a statistical age-structure model.
+This full assessment (produced on even years) consists of a population model, which uses survey and fishery data to generate a historical time series of population estimates, and a projection model, which uses results from the population model to predict future population estimates and recommended harvest levels. 
+The data used in this assessment includes total catch biomass, fishery age and size compositions, trawl survey abundance estimates, and trawl survey age compositions. 
+For Gulf of Alaska dusky rockfish in `r year` we present a full assessment with updated assessment and projection model results to recommend harvest levels for the next two years.
+
+## Summary of Changes in Assessment Inputs
+The input data were updated to include survey biomass estimates for `r year-1`, survey age compositions for `r year-1`, final catch for `r year-2` and `r year-1`, preliminary catch for `r year`, fishery age compositions for `r year-2`, and fishery size compositions for `r year-1`. 
+The survey biomass estimate is based upon the Groundfish Assessment Program’s (GAP) Vector Autoregressive Spatio-temporal (VAST) model for the GOA. 
+The VAST model input deviates slightly from the GAP default settings in that a lognormal error distribution was implemented instead of the gamma distribution (described in more detail in the *Data* section below).
+
+## Summary of Changes in Assessment Methodology
+The age plus group was extended from age-25 to age-30, the length plus group was extended from 47cm to 52cm. 
+
+## Summary of Results
+The author's preferred model is `r pref_mod`, which is the 2020 model with updated data through `r year` and increased age and length plus groups, using a VAST model-based index of survey abundance with lognormal error.
+This model generally produces good visual fits to the data and biologically reasonable patterns of recruitment, abundance, and selectivity.
+
+The `r pref_mod` `r year + 1` projected age 4+ total biomass is **XXXXX** t. 
+The recommended ABC for `r year + 1` is **XXXX** t, the maximum allowable ABC under Tier 3a. 
+This ABC is a **24% increase** compared to the `r year` ABC of **XXXX** t and a **30% increase** from the projected `r year + 1` ABC from last year. 
+The `r year+1` GOA-wide OFL for northern rockfish is **XXXX** t. 
+
+The stock is not being subject to overfishing, is not currently overfished, nor is it approaching a condition of being overfished. 
+The tests for evaluating these three statements on status determination require examining the official total catch from the most recent complete year and the current model projections of spawning biomass relative to $B_{35%}$ for `r year+1` and `r year+2`. 
+The official total catch for `r year-1` is **XXXX** t, which is less than the `r year-1` OFL of **XXXX** t; therefore, the stock is not being subjected to overfishing. 
+The estimates of spawning biomass for `r year+1` and `r year+2` from the projection model used this year (`r year`) are **XXXXX** t and **XXXXX** t, respectively. 
+Both estimates are above the estimate of $B_{35%}$ at **XXXXX** t and **XXXXX** t therefore, the stock is not currently overfished nor approaching an overfished condition.
+
+Reference values for dusky rockfish are summarized in the following table:
+
+
+```{r, child= "01a-main_table.Rmd", eval = T}
+
+```
+
+
+Text table of area apportionments (if any) for the recommended one- and two-year ahead ABCs and OFLs, with a brief description of the apportionment methodology.
+
+```{r, child= "01b-apportionment.Rmd", eval = T}
+
+```
+
+
+If so are so kind as to provide tables for the plan team, place them here
+
+```{r, child= "01c-plan_team.Rmd", eval = T}
+
+```
+
+

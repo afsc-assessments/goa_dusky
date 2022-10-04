@@ -1,0 +1,116 @@
+# Fishery 
+
+## Description of the Directed Fishery
+
+Dusky rockfish are caught almost exclusively with bottom trawls in the Central and Western areas of the GOA. Catches of dusky rockfish are concentrated at a number of relatively shallow, offshore banks of the outer continental shelf, especially the “W” grounds west of Yakutat, Portlock Bank northeast of Kodiak Island, and around Albatross Bank south of Kodiak Island. 
+Highest catch-per-unit-effort in the commercial fishery is generally at depths of 100-149 m [@Reuter 1999].
+During the period 1988-95, almost all the catch of dusky rockfish (>95%) was taken by large factory trawlers that processed the fish at sea. 
+This changed starting in 1996, when smaller shore-based trawlers also began taking a sizeable portion of the catch in the Central GOA area for delivery to processing plants in Kodiak.
+
+The Rockfish Program in the Central GOA initiated in 2007 allocated the rockfish quota by sector so the percentage of 2007-present catches by shore-based catcher vessels differs in comparison to previous years. 
+One benefit realized from the Rockfish Program is increased observer coverage and sampled catch for trips that target dusky rockfish [@Lunsford2009]. 
+Since the majority of dusky rockfish catch comes from the Central GOA, the effects of the Rockfish Program has implications on the spatial distribution of dusky rockfish catch. 
+In a study on localized depletion of Alaskan rockfish, @Hanselman2007b found that dusky rockfish were rarely depleted in areas 5,000-10,000 km^2^, except during 1994 in one area known as the “Snakehead” outside Kodiak Island in the GOA. 
+This area was heavily fished for northern (*S. polyspinis*) and dusky rockfish in the 1990s and both fishery and survey catch-per-unit-effort have consistently declined in this area since 1994. 
+Comparison of spatial distribution of the dusky rockfish catch before and after the Rockfish Program began did not show major changes in catch distribution [@Lunsford2013]. 
+Interpreting this data is confounded, however, as it’s unclear if results are attributable to changes in effort or observer coverage. 
+To further complicate data interpretation, in 2013 the North Pacific Groundfish and Halibut Observer Program was restructured with the objective to create a more rigorous scientific method for deploying observers onto more vessels in Federal fisheries. 
+Because many of the vessels targeting rockfish fall in the partial coverage category, we expect this restructuring effort will change the extent of data collected from the rockfish fishery and data should be monitored.
+
+### Catch Patterns
+
+Catch reconstruction for dusky rockfish is difficult because in past years dusky rockfish were managed as part of the pelagic shelf rockfish assemblage (Table 12-\@ref(tbl:mgmt)). 
+Fishery catch statistics specific to dusky rockfish in the Gulf of Alaska are available for the years 1977--`r year` (Table 12-\ref(tbl:catch)). 
+Generally, annual catches increased from 1988 to 1992, and have fluctuated in the years following. 
+This pattern is largely explained by management actions that have affected rockfish during this period. 
+In the years before 1991, TACs were relatively large for more abundant slope rockfish species such as Pacific ocean perch, and there was less reason for fishermen to target dusky rockfish. 
+As TACs for slope rockfish became more restrictive in the early 1990's and markets changed, there was a greater economic incentive for catching dusky rockfish. 
+As a result, catches of the pelagic shelf assemblage increased, reaching 3,532 t Gulf-wide in 1992. 
+However, a substantial amount of unharvested TAC generally remains each year in this fishery. 
+This is largely due to in-season management regulations which close the rockfish fishery to ensure other species such as Pacific ocean perch do not exceed TAC, or to prevent excess bycatch of Pacific halibut (*Hippoglossus stenolepis*).
+
+In response to Annual Catch Limit (ACL) requirements, assessments now document all removals including catch that is not associated with a directed fishery and reported in the Catch Accounting System. 
+These types of removals may include sport fishery harvest, research catches, or subsistence catch. 
+Research catches of pelagic shelf rockfish have been reported in previous stock assessments [@Lunsford2009]. 
+For this year, estimates of all removals through `r year-1` not associated with a directed fishery including research catches are available and are presented in Appendix 12.A. 
+In summary, research removals have typically been less than 20 t and some harvest occurs in the recreational fishery. 
+These levels likely do not pose a significant risk to the dusky rockfish stock in the GOA.
+
+### Bycatch and Discards
+
+Bycatch of other species caught in dusky rockfish targeted hauls has historically been dominated by northern rockfish and Pacific ocean perch [@Ackley2001]. 
+Similarly, dusky rockfish was the major bycatch species for hauls targeting northern rockfish. 
+These observations are supported by another study in which catch data from the observer program showed dusky rockfish were most commonly associated with northern rockfish, Pacific ocean perch, and harlequin rockfish [@Reuter1999].
+
+Total FMP groundfish catch estimates in the GOA rockfish fishery from 2016--`r year` are shown in Table 12-\@ref(tbl:incidental).
+As an average for the GOA rockfish fishery during 2016-2020, the largest non-rockfish bycatch groups are arrowtooth flounder (986 t/year), sablefish (637 t/year), atka mackerel (741 t/year) and walleye pollock (743 t/year).
+Non-FMP species catch in the rockfish target fisheries is dominated by giant grenadier (*Albatrossia pectoralis*) and miscellaneous fish (Table 12-\@ref(tbl:nonfmp)). 
+However, the amounts from dusky only targeted hauls are likely much lower as this includes all rockfish target hauls.
+
+Prohibited species catch in the GOA rockfish fishery is generally low for most species. 
+Catch of prohibitted and non-target species generally decreased with implementation of the Central GOA Rockfish Program [@Lunsford2013]. 
+Since the `r year-2` assessment the prohibited species catch observed in `r year-1` and `r year` **increased for Chinook salmon and non-chinook salmon, and remained at similar levels for halibut** (Table 12-\@ref(tbl:psc)).
+
+In summary, dusky rockfish are most likely to be associated with other rockfish fisheries and the bycatch of non-rockfish species in the dusky fishery are likely low but the only data available is for all rockfish-targeted hauls. 
+Bycatch estimates decreased for the majority of species in the Central GOA following the implementation of the Rockfish Pilot Program. 
+The significant prohibited species that are encountered are Pacific halibut, Chinook and non-Chinook salmon.
+
+Gulf-wide discard rates (percent of the total catch discarded within management categories) of dusky rockfish are show for 2000--`r year`. 
+Rates are listed in the following table and have ranged from less than 1% to 7.6% the total dusky catch over time. 
+These rates are considered to be low and are consistent with other GOA rockfish species.
+These discard rates are generally similar to those in the GOA for Pacific ocean perch and northern rockfish. 
+Discard mortality is assumed to be 100% for GOA dusky rockfish.
+
+```{r}
+data.frame(year = 2000:2010,
+            perc = c(0.9, 1.7, 4.3, 1.7, 1.8, 0.9, 5.0, 0.7, 0.7, 1.5, 1.0),
+           year1 = c(2011:2020,NA),
+           perc2 = c(1.8, 3.9, 5.2, 3.1, 5.3, 4.1, 7.6, 2.4, 6.3, 2.5, NA)) -> dat 
+
+  flextable::flextable(dat) %>% 
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  flextable::fontsize(size = 11, part = "all") %>% 
+  flextable::colformat_num(j=c(1,3), 
+                           big.mark = "") %>% 
+  flextable::set_header_labels(values = list(year = "Year", year1 = "Year", perc ="% discard", perc2 = "% discard")) %>% 
+  flextable::align(j=c(1,3), part = 'all') %>% 
+  flextable::width(j=c(1,3), width=0.5) %>%   
+  flextable::align(j=c(2,4), align = "center", part = 'all') %>% 
+  flextable::border_remove() %>%
+  flextable::hline_top(part = "header") %>%
+  flextable::hline_top() %>% 
+  flextable::hline_bottom()
+```
+
+## Management Measures 
+
+Rockfish (*Sebastes spp.*) species in Federal waters of the GOA were first split into three broad management assemblages by the North Pacific Fishery Management Council (NPFMC) in 1988: slope rockfish, pelagic shelf rockfish, and demersal shelf rockfish. 
+Species in each group were thought to share somewhat similar habitats as adults, and separate Stock Assessment and Fishery Evaluation (SAFE) reports were prepared for each assemblage. 
+Dusky rockfish were included in the pelagic shelf rockfish complex, defined as those species of *Sebastes* that inhabit waters of the continental shelf of the GOA, and that typically exhibit midwater, schooling behavior. 
+In 1998 a GOA FMP amendment went into effect that removed black rockfish (*S. melanops*) and blue rockfish (*S. mystinus*) from the assemblage. 
+In 2009 a similar amendment removed dark rockfish from the assemblage. 
+Management authority of these three species was transferred to the State of Alaska.
+
+Beginning in 2009 the pelagic shelf rockfish assemblage consisted of three species, dusky, widow, and yellowtail rockfish. 
+The validity of this management group became questionable as the group was dominated by dusky rockfish, which has a large biomass in the GOA and supports a valuable directed fishery, especially in the Central GOA. 
+In contrast, yellowtail and widow rockfish have a relatively low abundance in the GOA and are taken commercially in very small amounts as bycatch. 
+Moreover, since 2003, dusky rockfish has been assessed by an age-structured model and is considered a “Tier 3” species in the NPFMC harvest policy definitions, while yellowtail and widow rockfish remained “Tier 5” species in which the assessment is based on simple estimates of biomass and natural mortality.
+
+Following recommendations by the authors, the GOA Groundfish Plan Team, and the NPFMC’s Science and Statistical Committee, dusky rockfish were assessed separately starting in 2012 and are presented as a stand-alone species in this document; widow and yellowtail rockfish have been included in the Other Rockfish stock assessment [see Appendix 12B, @Lunsford2011]. 
+Beginning in 2012, ABCs, TACs, and OFLs specific to dusky rockfish have been assigned.
+
+In 1998, trawling in the Eastern GOA east of 140 degrees W. longitude was prohibited through FMP Amendment 41 (officially recognized in 2000). 
+This had important management concerns for most rockfish species, including the pelagic shelf management assemblage, because the majority of the quota is caught by the trawl fishery. 
+In response to this action, since 1999 the NPFMC has divided the Eastern GOA management area into two smaller areas: West Yakutat (area between 140$^\circ$ and 147$^\circ$ W. longitude) and East Yakutat/Southeast Outside (area east of 140$^\circ$ W. longitude). 
+ABC and TAC recommendations for dusky rockfish are generated for both West Yakutat and East Yakutat/Southeast Outside areas to account for the trawling ban in the Eastern area.
+
+In 2007 the Central GOA Rockfish Program was implemented to enhance resource conservation and improve economic efficiency for harvesters and processors who participate in the Central GOA rockfish fishery. 
+This rationalization program establishes cooperatives among trawl vessels and processors which receive exclusive harvest privileges for rockfish species. 
+The primary rockfish management groups are northern, Pacific ocean perch, and pelagic shelf rockfish (changed to dusky rockfish only in 2012). 
+Potential effects of this program on the dusky rockfish fishery include: 1) Extended fishing season lasting from May 1 – November 15, 2) changes in spatial distribution of fishing effort within the Central GOA, 3) improved at-sea and plant observer coverage for vessels participating in the rockfish fishery, and 4) a higher potential to harvest 100% of the TAC in the Central GOA region. 
+We continue to monitor available fishery data to help understand effects the Rockfish Project may have on the dusky rockfish stock in the Central GOA.
+Within the GOA, separate ABCs and TACs for dusky rockfish are assigned to smaller geographical areas that correspond to NMFS management areas. 
+These include the Western GOA, Central GOA, and Eastern GOA (comprised of West Yakutat, and East Yakutat/Southeast Outside sub-areas). 
+OFLs for dusky rockfish are defined on a GOA-wide basis.
+A summary of key management measures, a time series of catch, ABC, and TAC are provided in Table 12-\@ref(tbl:mgmt).
+

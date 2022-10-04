@@ -1,0 +1,52 @@
+# Introduction
+
+Dusky rockfish (*Sebastes variabilis*) have one of the most northerly distributions of all rockfish species in the Pacific. 
+They range from southern British Columbia north to the Bering Sea and west to Hokkaido Island, Japan, but appear to be abundant only in the Gulf of Alaska (GOA). 
+Previously, two forms of dusky rockfish, were recognized; “light dusky rockfish” and “dark dusky rockfish”. 
+However, they are now officially distinguished as two separate species [@Orr2004]. 
+*S. ciliatus* applies to the dark, shallow-water species with the common name dark rockfish, and *S. variabilis* applies to variably colored, usually deeper-water species, with the common name dusky rockfish. 
+This assessment applies only to *S. variabilis*.
+
+Adult dusky rockfish are concentrated on offshore banks and near gullies on the outer continental shelf at depths of 100 to 200 m [@Reuter1999]. 
+Anecdotal evidence from fishermen and from biologists on trawl surveys suggests that dusky rockfish are often caught in association with hard, rocky bottom on these banks or gullies. 
+Also, during submersible dives on the outer shelf of the Eastern GOA, dusky rockfish were observed in association with rocky habitats and in areas with extensive sponge beds, where adults were seen resting in large vase sponges^[1V.M. O’Connell, Alaska Dept. of Fish and Game, 304 Lake St., Sitka, AK 99835. Pers. comm. July 1997.]. 
+Another study using a submersible in the Eastern GOA observed small dusky rockfish associated with *Primnoa* spp. corals [@Krieger2002]. 
+Research focusing on untrawlable habitats found rockfish species often associate with biogenic structure @[DuPreez2011; @Laman2015], and that dusky rockfish in particular are often found in both trawlable and untrawlable habitats [@Rooper2012; @Rooper2012]. 
+Several of these studies are notable as results indicate further research is needed to address if there are differences in adult dusky rockfish density between trawlable and untrawlable habitats because currently survey catch estimates are extrapolated to untrawlable habitat [@Jones2012; @Rooper2012].
+
+
+## Biology and Distribution
+
+Parturition is believed to occur in the spring, based on observation of ripe females sampled on a research cruise in April 2001 in the Central GOA. 
+Similar to all other species of Sebastes, dusky rockfish are ovoviviparous with fertilization, embryonic development, and larval hatching occurring inside the mother. 
+After extrusion, larvae are pelagic, but larval studies are hindered because they can only be positively identified by genetic analysis. 
+Post-larval dusky rockfish have not been identified; however, the post-larval stage for other Sebastes is pelagic, so it is also likely to be pelagic for dusky rockfish. 
+The habitat of young juveniles is completely unknown. At some point they are assumed to migrate to the bottom and take up a demersal existence; juveniles less than 25 cm fork length are infrequently caught in bottom trawl surveys [@Clausen2002] or with other sampling gear. 
+Older juveniles have been taken only infrequently in trawl surveys, but when caught are often found at more inshore and shallower locations that adults. 
+@Laman2015 found juvenile Pacific ocean perch (*S. alutus*) utilize the vertical habitat that biogenic structures provide in otherwise low-relief, trawlable habitats, indicating these biogenic structures may represent refugia to juvenile rockfish. 
+The major prey of adult dusky rockfish appears to be euphausiids, based on the limited food information available for this species [@Yang1993]. 
+In a more recent study, @Yang2006 found that Pacific sand lance along with euphausiids were the most common prey item of dusky rockfish, comprising 82% and 17% , respectively, of total stomach contents by weight.
+
+The evolutionary strategy of spreading reproductive output over many years is a way of ensuring some reproductive success through long periods of poor larval survival [@Leaman1984]. 
+Fishing generally selectively removes the older and faster-growing portion of the population. 
+If there is a distinct evolutionary advantage of retaining the oldest fish in the population, either because of higher fecundity or because of different spawning times, age-truncation could be deleterious to a population with highly episodic recruitment like rockfish [@Longhurst2002]. 
+Work on black rockfish (*S. melanops*) has shown that larval survival may be dramatically higher from older female spawners [@Berkeley2004; @Bobko2004]. 
+@DeBruin2004 examined Pacific ocean perch and rougheye rockfish (*S. aleutianus*) for senescence in reproductive activity of older fish and found that oogenesis continues at advanced ages. 
+@Leaman1991 showed that older individuals have slightly higher egg dry weight than their middle-aged counterparts. 
+Such relationships have not yet been determined to exist for dusky rockfish in Alaska but maternal age effects on reproduction are an important consideration for assessing population status. 
+Some literature suggests that environmental factors may affect the condition of female rockfish that contribute to reproductive success [@Hannah2007; @Rodgveller2012; @Beyer2015]. 
+Abortive maturation has been observed for in dusky rockfish in Alaska [@Conrath2019], though the frequency and duration are unknown.
+Stock assessments for dusky rockfish in the GOA have assumed that the reproductive success of mature fish is independent of age and that all mature females will spawn annually.
+
+
+## Stock Structure
+
+A review of dusky rockfish stock structure was presented to the GOA Plan Team in September 2011, and was presented as an Appendix to the 2012 assessment document. 
+In summary, available data suggests lack of significant stock structure, therefore the current resolution of spatial management is likely adequate and consistent with management goals [@Lunsford2012]. 
+It is evident from this evaluation that life history focused research is warranted and will help in evaluating dusky rockfish stock structure in the GOA.
+
+Dusky rockfish are managed as a separate stock in the GOA Federal Management Plan (FMP). 
+There are three management areas in the GOA: Western, Central, and Eastern. 
+The Eastern area is further divided into West Yakutat and East Yakutat/Southeast Outside management units. 
+This is done to account for the trawl prohibition in the East Yakutat/Southeast Outside area (east of 140 degree W. longitude) created by FMP Amendment 41.
+

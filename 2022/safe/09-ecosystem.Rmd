@@ -1,0 +1,58 @@
+# Ecosystem Considerations
+
+In general, a determination of ecosystem considerations is hampered by the lack of biological and habitat information for dusky rockfish. 
+However, a review of the most recent (2019) GOA Ecosystem Status Report did not reveal strong evidence of declining trends in indicators which results in strong concern for dusky rockfish. 
+A summary of the ecosystem considerations presented in this section is listed in **ref Table 12-18**. 
+Additionally, we provide information regarding the FMP, non-FMP, and prohibited species caught in rockfish target fisheries to help understand ecosystem impacts by the dusky fishery **ref (Tables 12-3, 12-4, 12-5)**.
+
+## Ecosystem Effects on the Stock
+
+*Prey availability/abundance trends:* similar to many other rockfish species, stock condition of dusky rockfish appears to be greatly influenced by periodic abundant year classes. 
+Availability of suitable zooplankton prey items in sufficient quantity for larval or post-larval dusky rockfish may be an important determining factor of year class strength. 
+Unfortunately, there is no information on the food habits of larval or post-larval rockfish to help determine possible relationships between prey availability and year class strength; moreover, field-collected larval dusky rockfish at present cannot even be visually identified to species. 
+@Yang1993 reported that adult dusky rockfish consume mostly euphausiids. 
+@Yang2006 reports Pacific sandlance *Ammodytes hexapterus* and euphausiids as the most common prey item of dusky rockfish with Pacific sandlance comprising 82% of stomach content weight. 
+Euphausiids are also a major item in the diet of walleye pollock, Pacific ocean perch, and northern rockfish. 
+Changes in the abundance of these three species could lead to a corollary change in the availability of euphausiids, which would then have an impact on dusky rockfish.
+
+*Predator population trends:* there is no documentation of predation on dusky rockfish. 
+Larger fish such as Pacific halibut that are known to prey on other rockfish may also prey on adult dusky rockfish, but such predation probably does not have a substantial impact on stock condition. 
+Predator effects would likely be more important on larval, post-larval, and small juvenile dusky rockfish, but information on these life stages and their predators is lacking.
+
+*Changes in physical environment:* strong year classes corresponding to the period 1976-77 have been reported for many species of groundfish in the Gulf of Alaska, including walleye pollock, Pacific ocean perch, northern rockfish, sablefish, and Pacific cod. 
+As discussed in the survey data section, age data for dusky rockfish indicates that the 1976 and/or 1977 year classes were also unusually strong for this species. 
+Therefore, it appears that environmental conditions may have changed during this period in such a way that survival of young-of-the-year fish increased for many groundfish species, including dusky rockfish. 
+The environmental mechanism for this increased survival of dusky rockfish, however, remains unknown. 
+Pacific ocean perch and dusky rockfish both appeared to have strong 1986 year classes, and this may be another year when environmental conditions were especially favorable for rockfish species.
+
+Changes in bottom habitat due to natural or anthropogenic causes could alter survival rates by altering available shelter, prey, or other functions. 
+Associations of juvenile rockfish with biotic and abiotic structure have been noted by @Carlson1981, @Pearcy1989, and @Love1991. 
+However, the Essential Fish Habitat Environmental Impact Statement [EFH EIS; @NMFS 2001] concluded that the effects of commercial fishing on the habitat of groundfish are minimal or temporary. 
+The upward trend in abundance suggests that at current levels of abundance and exploitation, habitat effects from fishing is not limiting this stock.
+
+## Fishery Effects on the Ecosystem 
+
+*Fishery-specific contribution to bycatch of HAPC biota:* there is limited habitat information on adult dusky rockfish, especially regarding the habitat of the major fishing grounds for this species in the GOA. 
+Nearly all the catch of dusky rockfish, however, is taken by bottom trawls, so the fishery potentially could affect HAPC biota such as corals or sponges if it occurred in localities inhabited by that biota. 
+Corals and sponges are usually found on hard, rocky substrates, and there is some evidence that dusky rockfish may be found in such habitats. 
+On submersible dives on the outer continental shelf of the Eastern GOA, light dusky rockfish were observed in association with rocky habitats and in areas with extensive sponge beds, where the fish were observed resting in large vase-type sponges.^[V.M. O=Connell, Alaska Dept. of Fish and Game, 304 Lake St., Sitka, AK 99835. Pers. commun. July 1997.] 
+Also, dusky rockfish often co-occur and are caught with northern rockfish in the commercial fishery and in trawl surveys [@Reuter1999 and catches of northern rockfish have been associated with a rocky or rough bottom habitat [@Clausen2002]. 
+Based on this indirect evidence, it can be surmised that dusky rockfish are likely also associated with rocky substrates. 
+An analysis of bycatch of HAPC biota in commercial fisheries in the Gulf of Alaska in 1997-99 indicated that the dusky rockfish trawl fishery ranked fourth among all fisheries in the amount of corals taken as bycatch and sixth in the amount of sponges taken [@NMFS2001]. 
+Little is known, however, about the extent of these HAPC biota and whether the bycatch is detrimental.
+
+*Fishery-specific concentration of target catch in space and time relative to predator needs in space and time (if known) and relative to spawning components:* the dusky rockfish trawl fishery in the GOA previously started in July and usually lasted only a few weeks. 
+As mentioned previously in the fishery section, the fishery is concentrated at a number of offshore banks on the outer continental shelf. 
+Beginning in 2007 the Rockfish Program began which allowed fishing in the Central GOA from May 1 – November 15. 
+There is no published information on time of year of insemination or parturition (larval release), but insemination is likely in the fall or winter, and anecdotal observations indicate parturition is mostly in the spring. 
+Hence, reproductive activities are probably not directly affected by the commercial fishery. 
+However, there may be some interaction in the Central GOA if parturition is delayed until May 1.
+Fishery-specific effects on amount of large size target fish: a comparison between **ref Table 12-6** (length frequency in the commercial fishery) and **ref Table 12-10** (size composition in the trawl surveys) suggests that although the fishery does not catch many small fish <40 cm length, the fishery also does not catch a significantly greater percentage of very large fish, relative to trawl survey catches.
+
+*Fishery contribution to discards and offal production:* fishery discard rates of dusky rockfish have been quite low in recent years, especially after formation of the Rockfish Program. 
+The discard rate in the dusky rockfish fishery is unknown as discards are grouped as rockfish fishery target and are not available specifically for the dusky rockfish fishery.
+
+*Fishery-specific effects on age-at-maturity and fecundity of the target fishery:* the fishery effects on age-at-maturity and fecundity are unknown, but based on the size of 50% maturity of female dusky rockfish reported in this document (40.3 cm), the fishery length frequency distributions in **ref Figure 12-6** suggest that the fishery may catch some immature fish.
+
+*Fishery-specific effects on EFH living and non-living substrate:* effects of the dusky rockfish fishery on non-living substrate is unknown, but the heavy-duty rockhopper trawl gear commonly used in the fishery can move around rocks and boulders on the bottom. 
+**ref Table 12-4** shows the estimated bycatch of living structure such as benthic urochordates, corals, sponges, sea pens, and sea anemones by the GOA rockfish fisheries.
