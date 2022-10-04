@@ -1,0 +1,31 @@
+
+Initial statistics: 1 variables; iteration 0; function evaluation 0; phase 1
+Function value   9.5857437e+02; maximum gradient component mag  -3.5897e+03
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient
+  1  0.00500  -3.5897e+03 |
+
+Intermediate statistics: 1 variables; iteration 10; function evaluation 14; phase 1
+Function value   1.9051767e+01; maximum gradient component mag  -7.2944e-01
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient
+  1  2.01116  -7.2944e-01 |
+
+ - final statistics:
+1 variables; iteration 13; function evaluation 17
+Function value   1.9048e+01; maximum gradient component mag  -6.3848e-08
+Exit code = 1;  converg criter   1.0000e-07
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient
+  1  2.02112  -6.3848e-08 |
+
+Initial statistics: 2 variables; iteration 0; function evaluation 0; phase 2
+Function value   1.9048142e+01; maximum gradient component mag   3.7232e+00
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient
+  1  2.02112  -6.3848e-08 |  2  0.50000   3.7232e+00 |
+
+ - final statistics:
+2 variables; iteration 9; function evaluation 13
+Function value   1.4442e+01; maximum gradient component mag  -1.5243e-10
+Exit code = 1;  converg criter   1.0000e-07
+Var   Value    Gradient   |Var   Value    Gradient   |Var   Value    Gradient
+  1  2.96272  -1.5243e-10 |  2 -1.40804  -1.1347e-10 |
+Estimating row 1 out of 2 for hessian
+Estimating row 2 out of 2 for hessian
