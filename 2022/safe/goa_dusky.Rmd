@@ -10,7 +10,7 @@ date: "November 2022"
 
 # don't do anything below this line unless you are cool with the consequences
 output:
-  bookdown::html_document2:
+  bookdown::word_document2:
      reference_docx: "template.docx"
      toc: false
      number_sections: false
@@ -139,7 +139,9 @@ c3 = 4391 # proj catch year + 2
 
 ```{r, child="10-gaps.Rmd", eval = T}
 ```
+
 \pagebreak
+
 \allsectionsfont{\centering}
 
 # References
@@ -148,18 +150,22 @@ c3 = 4391 # proj catch year + 2
 
 ```{r, child="11-tables.Rmd", eval = T}
 ```
+
 \pagebreak
 
 ```{r, child="12-figures.Rmd", eval = T}
 ```
+
 \pagebreak
 
 ```{r, child="13-append_a.Rmd", eval = T}
 ```
+
 \pagebreak
 
 ```{r, child="14-append_vast.Rmd", eval = T}
 ```
+
 \pagebreak
 
 ```{r, child="15-model_compare.Rmd", eval = T}
