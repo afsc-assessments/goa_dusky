@@ -2,50 +2,94 @@
 
 ## Model Evaluation
 
-Conduct within-model retrospective analysis by rerunning each model successively, dropping data one year at a time.
-Specifically:
+The author's preferred model is model m22.3a. 
+A subset of examined models are described here, a description of all intermediate model outputs is available in Appendix 12c.
+The models described here are:
 
-1. Include retrospective analysis extending back 10 years, plot spawning biomass estimates and error bars, plot relative differences, and report Mohn's “rho” statistic (see **Retrospective Working Group report** for formula, *not* Mohn’s 1999 paper).
-2. Communicate the uncertainty implied by retrospective variability in biomass estimates.
-3. For the time being, *do not* disqualify a model on the grounds of poor retrospective performance alone.
-4. *Do* consider retrospective performance as one factor in model selection.
+```{r}
+data.frame(Model = c("base", 
+                     "m15.5a",
+                     "m22",
+                     "m22.3a",
+                     "m22b"),
+           Description = c("2020 model (m15.5a) and results (includes 1980s survey data)",
+                           "base model w/data updated through 2022, using GAP default VAST",
+                           "m15.5a using GAP default VAST (survey data 1990+)",
+                           "m22 w/increased age & length plus groups",
+                           "m22 using design-based survey abundance (1990+)")) %>% 
+  flextable::flextable() %>% 
+  flextable::padding(padding = 0, part = "all") %>% 
+  flextable::autofit() %>% 
+  flextable::font(fontname = "Times", part = "all") %>% 
+  flextable::fontsize(size = 10)  
+```
 
-Description of other criteria used to evaluate the model or to choose between alternative models, including the role (if any) of uncertainty.  
-Evaluation of the model, if only one model is presented; or evaluation of alternative models and selection of final model, if more than one model is presented.  
-List of final parameter estimates, **with confidence bounds** or other statistical measures of uncertainty if possible (if the set of parameters includes quantities listed in the “Time Series Results” section below, the values of these quantities should be presented in the “Time Series Results” section rather than here).
-
-Schedules, if any, defined by final parameter estimates
-
+When we present alternative model configurations, our usual criteria for choosing a superior model are: (1) the best overall fit to the data (in terms of negative log-likelihood), (2) biologically reasonable patterns of estimated recruitment, catchabilities, and selectivities, (3) a good visual fit to length and age compositions, and (4) parsimony. 
+We've presented results for multiple models because the 2020 and 2022 models differ in either the geospatial model parameterization or the age and length plus group. 
+The design-based model is presented per SSC request note that m22b is presented as there was little to no difference in biomass eastimates from from iterative model changes using a design-based trawl survey biomass (Appendix 12c).
+Model m22.3a produces good visual fits to the data, and biologically reasonable patterns of recruitment, abundance, and selectivities. 
+Therefore, the recommended 2022 model is utilizing the new information effectively, and we use it to recommend the `r year+1` ABC and OFL.
 
 ## Time Series Results
 
-(This section should be omitted for Tiers 4-6. 
-For Tiers 1-3, items in this section pertain to the authors’ recommended model.)
+Key results have been summarized in Tables 12-\@ref(tab:likelihood) – 12-\@ref(tab:timseries). 
+In general, model predictions continue to fit the data well (Figures 12-\@ref(fig:fcatch), 12-\@ref(fig:fsurvey), 12-\@ref(fig:ffac), 12-\@ref(fig:fsac), 12-\@ref(fig:ffsc)).
 
-Include a table that has a set of parallel key results) for the previously accepted assessment, compared with new results. At a minimum this table should include spawning biomass and recruitment. 
+*Definitions*  
+Spawning biomass is the biomass estimate of mature females in tons. 
+Total biomass is the biomass estimate of all dusky rockfish age four and greater in tons. 
+Recruitment is measured as number of age four dusky rockfish. 
+Fishing mortality is fully-selected *F*, meaning the mortality at the age the fishery has fully selected the fish.
 
-Definition of biomass measures used (e.g., age range used in the “age+” biomass)
+*Biomass and Exploitation Trends*  
+The predicted survey biomass generally captures the trend in observed (VAST geospatial model) survey biomass similarly for the preferred and bridge models (Figure12-\@ref(fig:fcomparesrv) and Figure 12-\@ref(fig:fsurvey)), but without matching the interannual variability that is present in observed values. 
+The 2021 observed survey values are greater than the predicted model estimates for all models presented, indicating that the assessment model is tempering the observed increase in variability based on age compositional data.
+However, the model predicted survey biomass estimates for VAST models area quite similar with only the design-based survey estimator producing different results. Spawning biomass estimates are at a timeseries high (\@ref(fig:fcomparebio)). 
+Total age-4+ biomass estimates for all model using VAST survey inputs indicate a steadily increasing trend with a peak around 2016.
 
-Definition of recruitment measures used (e.g., numbers at age 3)
+The estimated selectivity curve for the fishery and survey data suggested a pattern similar to previous assessments for dusky rockfish (Figure 12-\@ref(fig:fslx)). 
+The commercial fishery targets larger and subsequently older fish and the survey should sample a larger range of ages. 
+Ninety-five percent of dusky rockfish are selected survey by age 10. 
+The age at 50% selection is 8.7 for the survey and 10.3 for the fishery.
 
-Table of estimated biomass time series, including age+ biomass and spawning biomass, **with confidence bounds** or other statistical measure of uncertainty if possible. 
-The time series included in this table **should end with estimates for the projection year**. Include estimates from previous SAFE for retrospective comparison.
-
-Table of estimated recruitment time series, including average of year classes spawned after 1976, **with confidence bounds** or other statistical measure of uncertainty if possible.  Include estimates from previous SAFE for retrospective comparisons
-
-Table of estimated numbers at age. 
-
-Graph of estimated biomass time series, with confidence bounds if possible
-
-Graph of estimated fishing mortality versus estimated spawning stock biomass (phase-plane plot), including applicable OFL and maximum FABC definitions for the stock. 
-Biomass should be scaled relative to $B_{MSY}$ for Tier 1 stocks and %B_{35\%}$ for Tier 3 stocks. 
-Fishing mortality should be scaled relative to the arithmetic mean of $F_{MSY}$ for Tier 1 stocks and $F_{35\%}$ for Tier 3 stocks. 
-Include 2 years of projected *F* and *B* in the phase-plane plot.
-
-
+The fully-selected fishing mortality time series indicates a rise in fishing mortality from late 1980’s through the late 1990’s and has been relatively stable from 2003-2022. 
+Since 2003 fully-selected fishing mortality has ranged between 0.03 and 0.06 (Figure 12-\@ref(fig:fF)). 
+In 2012, the harvest exceeded TAC in the Western GOA. 
+This occurred in all rockfish fisheries in response to a delayed closing of the fishery. 
 @Goodman2002 suggested that stock assessment authors use a “management path” graph as a way to evaluate management and assessment performance over time. 
-In the management path we plot the ratio of fishing mortality to $F_{OFL}$ ($F_{35%}$) and the estimated spawning biomass relative to $B_{35%}$. 
-Harvest control rules based on $F_{35%}$ and $F_{40%}$ and the Tier 3b adjustment are provided for reference. 
-The historical management path for northern rockfish has been above the $F_{OFL}$ adjusted limit for only a few years in the 1960s. 
-In recent years, dusky rockfish have been above $B_{35%}$ and below $F_{35%}$ **ref(Figure 12-9)**.
-The trajectory of fishing mortality has remained below the $F_{40%}$ level most of the time and below $F_{35%}$ in all years except 1964-66 during the period of intense fishing for Pacific ocean perch **ref (Figure 12-9)**. 
+In the management path we plot the ratio of fishing mortality to $F_{OFL}$ ($F_{35\%}$) and the estimated spawning biomass relative to $B_{35\%}$. 
+Harvest control rules based on $F_{35\%}$ and $F_{40\%}$ and the Tier 3a adjustment are provided for reference. 
+The historical management path for dusky rockfish has been above the $F_{OFL}$ adjusted limit in the early 1980s and early 1990s. 
+In recent years, dusky rockfish have been above $B_{40\%}$ and below $F_{40\%}$ (Figure 12-\@ref(fig:fphase)).
+
+
+*Recruitment*  
+There is some lack of fit to the fishery size compositions for 1991-1999 (Figure 12-\@ref(fig:ffsc)). 
+This may be due to the increase in size of fish taken by the fishery in those years as mentioned in the Fishery data section. 
+The fishery size composition fits from 2007+ are generally good. 
+In general, the model fits the fishery age compositions well (Figure 12-\@ref(fig:ffac)). 
+Increasing the plus age group to age-30 provides a bit more resolution in the age composition data, while mainatianing similar overall fits to the composition data.
+The strong year classes from 1992 and 1995 have largely moved into the plus age group. 
+The 2018 age data suggest that there is a large pulse of age 11 fish (with ages 10 and 12 also high) observed in the compositional data and continues to be observed in the 2020 data.
+
+The survey age compositions also track the 1992 year class well and try to fit the 1995 year class, which appeared consistently strong in surveys through 2013 (Figure 12-\@ref(fig:fsac)); in 2015 the model predicted a smaller proportion of fish to be in the plus age group than what was observed in the survey. 
+Similar to the fishery age compositions, the survey age compositions show an increase in proportions of fish aged 11 and 12 in the 2019 and 2021 data. 
+
+Recruitment estimates show several above average events in the 1990s through early 2000s, and a large recruitment in 2014 (Figure 12-\@ref(fig:frecruit)). 
+This high recruitment value has relatively high uncertainty, which is likely due to age composition data indicating higher proportions of ages 10-12 fish, instead of a single age class. 
+In general, recruitment (age-4) is highly variable throughout the time series, particularly the most recent years, where typically very little information is known about the strength of incoming year classes. 
+There also does not seem to be a clear spawner-recruit relationship for dusky rockfish as recruitment appears unrelated to spawning stock biomass (Figure 12-\@ref(fig:frecssb)). 
+MCMC credible intervals for recruitment are fairly narrow in some years; however, the credible intervals nearly contain zero for many years which indicates considerable uncertainty, particularly for the most recent years (Figure 12-\@ref(fig:frecruit)).
+
+
+*Retrospective analysis*  
+From the MCMC chains described in the *Uncertainty approach* section, we summarize the posterior densities of key parameters for the recommended model using histograms (Figure 12-\@ref(fig:fhist)) and credible intervals (Table 12-\@ref(tab:mcmcpar)). 
+We also use these posterior distributions to show uncertainty around time series estimates such as total biomass, recruitment, and spawning biomass (Figures 12-\@ref(fig:fbiomass), 12-\@ref(fig:frecruit), 12-\@ref(fig:fswath)).
+
+Table 12-\@ref(tab:mcmcpar) shows the maximum likelihood estimate (MLE) of key parameters with their corresponding standard deviations derived from the Hessian matrix compared to the standard deviations derived from MCMC methods. 
+The Hessian and MCMC standard deviations are larger for the estimates of *q*, $F_{40\%}$, ABC, and female spawning biomass. 
+These larger standard deviations indicate that these parameters are more uncertain than indicated by the standard estimates. 
+However, all estimates fall within the Bayesian credible intervals.
+
+
+

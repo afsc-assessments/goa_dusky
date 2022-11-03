@@ -5,10 +5,17 @@
 There is no information on larval, post-larval, or early stage juvenile dusky rockfish. 
 Larval dusky rockfish can only be identified with genetic techniques, which are very high in cost and manpower. 
 Analysis of stock structure through the stock structure template illustrates the need for a large scale genetic study to investigate stock structure of dusky rockfish in the GOA. 
-Habitat requirements for larval, post-larval, and early stage juvenile dusky rockfish are unknown. Habitat requirements for later stage juvenile and adult fish are anecdotal or conjectural. 
-Research needs to be done to identify the HAPC biota on the bottom habitat of the major fishing grounds and what impact bottom trawling has on these biota. 
+Habitat requirements for larval, post-larval, and early stage juvenile dusky rockfish are unknown. 
+Habitat requirements for later stage juvenile and adult fish are anecdotal or conjectural. 
+Research needs to be done to identify the HAPC biota on the bottom habitat of the major fishing grounds and what impact bottom trawling has on these biota.
+
+Little is known about the reproductive biology of dusky rockfish. 
+Though they have been observed to skip spawn [@Conrath2019]. 
+The spatial and temporal extent of skip spawning is unknown and should be a priority research topic.
+
 
 ## Assessment Data
 
-Several techniques are used by stock assessors to weight length and age sample sizes in models. 
-Research is currently being conducted to determine the best technique for weighting sample sizes and results should help us in choosing appropriate rationale for weightings within this assessment.
+Several techniques are used by stock assessors to determine weight length and age sample sizes in models. 
+Research is currently being conducted to determine the best technique for weighting sample sizes and results should help us in choosing appropriate rationale for model weightings within this assessment.
+Last, an examination of incorprating an error inflation parameter to increase the variance in VAST models and explore the effect low survey model variance has on resulting assessment outputs.

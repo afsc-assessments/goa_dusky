@@ -11,7 +11,7 @@ Adult dusky rockfish are concentrated on offshore banks and near gullies on the 
 Anecdotal evidence from fishermen and from biologists on trawl surveys suggests that dusky rockfish are often caught in association with hard, rocky bottom on these banks or gullies. 
 Also, during submersible dives on the outer shelf of the Eastern GOA, dusky rockfish were observed in association with rocky habitats and in areas with extensive sponge beds, where adults were seen resting in large vase sponges^[1V.M. O’Connell, Alaska Dept. of Fish and Game, 304 Lake St., Sitka, AK 99835. Pers. comm. July 1997.]. 
 Another study using a submersible in the Eastern GOA observed small dusky rockfish associated with *Primnoa* spp. corals [@Krieger2002]. 
-Research focusing on untrawlable habitats found rockfish species often associate with biogenic structure @[DuPreez2011; @Laman2015], and that dusky rockfish in particular are often found in both trawlable and untrawlable habitats [@Rooper2012; @Rooper2012]. 
+Research focusing on untrawlable habitats found rockfish species often associate with biogenic structure [@DuPreez2011; @Laman2015], and that dusky rockfish in particular are often found in both trawlable and untrawlable habitats [@Rooper2012; @Rooper2012]. 
 Several of these studies are notable as results indicate further research is needed to address if there are differences in adult dusky rockfish density between trawlable and untrawlable habitats because currently survey catch estimates are extrapolated to untrawlable habitat [@Jones2012; @Rooper2012].
 
 
