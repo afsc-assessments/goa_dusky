@@ -1,0 +1,256 @@
+# Appendix 12c: Model comparisons
+
+## Trawl survey biomass examinations 
+
+A suite of VAST model alternative parameterizations were explored using the base model (2020 accepted model using 2020 data), the variants examined were:
+
+ - A = poisson-delta, gamma, 500 knots - 2020 accepted
+ - B = poisson-delta, gamma, 750 knots - 2020 accepted w/more knots (current default)
+ - C = delta, lognormal, 1000 knots
+ - D = delta, lognormal, 750 knots
+ - E = poisson-delta, lognormal, 750 knots
+ - F = delta, gamma, 750 knots
+
+While survey survey biomass estimates inputs vary between VAST models the assessment model produces similar outputs for all of them (Figure 12c-\@ref(fig:vastbio)). 
+
+
+However, there are VAST variants that produce substantial annual variability between years (Figure 12c-\@ref(fig:vast-bioa)) and model that are less variable (Figure 12c-\@ref(fig:vast-biob)). 
+Given the relative longevity of the species it is unlikely that the large swings in estimated biomass are correct. 
+They are likely due to the trawl survey sample design and inability to trawl in the preferred habitat of dusky rockfish. 
+Though it is unclear whether addressing this sampling issue via modeling is appropriate it would be more in line with our understanding of the stock dynamics to choose a model that has less annual variability.  
+
+The spawning and total biomass estimates from the base model do vary depending upon the VAST survey model inputs (Figure 12c-\@ref(fig:vast-tot)). 
+The higher variability VAST model inputs differ from the base model (A), w/the current VAST default parameterization (B) increases both spawning and total biomass estimates  (Figure 12c-\@ref(fig:vast-tota)). 
+The lower variability VAST model inputs all estimate less total and spawning biomass than the base model. 
+Model E which only differs from the current default model (B) by using a lognormal error structure is just slightly under the estimates from the default VAST parameterization  (Figure 12c-\@ref(fig:vast-totb)), and is also below VAST input B. 
+
+
+Further examination of the current GAP recommended default model (B) and model E is warranted so model residuals were examined. 
+VAST model B (current default) model residuals show more deviation from observed values (Figure 12c-\@ref(fig:vast-residb)) than VAST model E (Figure 12c-\@ref(fig:vast-reside)). 
+Therefore our recommendation is to use VAST model **E** as it maintains the use of the delta model (reduced bias), has same # of knots as default GAP settings, has improved residual diagnostics and is precautionary relative to default GAP settings.
+
+
+## Age and length plus group examinations
+
+The SSC and Plan Team have requested an examination of changing the age and length plus groups from GOA dusky rockfish. 
+Presented here are model results using the 2020 base model with an increase in the age plus group from age-25+ to age-30+ and increase in the length plus group from 47 cm to 52 cm.
+Increasing the length plus group, provides greater resolution of lengths(Figures 12c-\@ref(fig:lplus) and 12c-\@ref(fig:slplus)), though the increase in modeled composition data does not have an effect on total or spawning biomass (Figure 12c-\@ref(fig:lbio)).   
+
+Increasing the age plus group provides greater resolution and the model fits are slightly better for the plus age (Figures 12c-\@ref(fig:aplus) and 12c-\@ref(fig:faplus)). 
+There is a slight increase in total and spawning biomass associated with the increase in the age plus group (Figure 12c-\@ref(fig:abio)).  
+Introducing both an increase in the age and length composition data produced the same results as the increase in age compositions so they are not shown. 
+Associated likelihood values did increase (due to more age compositions for the model to estimate; Table 12c-\@ref(tab:likeage)).
+Given the improved resolution and limited impact on model outcomes it is recommended to increase both the age and length compositions.
+
+## 2022 model comparisons
+
+Using the design-based survey biomass inputs produces both similar results for both modeled survey biomass predictions (Figure 12c-\@ref(fig:fdbcompare)) and estimates of spawning and total biomass (Figure 12c-\@ref(fig:fdbbio)). 
+These similarities occure regardless of increases in length or age plus groups, therefore to reduce the overall number of models being compared only m22b will be presented hereon and since the assessment has switched to using VAST estimates for survey abundance inputs, the design-based model (m22b) is presented for reference though not discussed. 
+
+The base model, m15.5a and m22 all have similar survey biomass input values and produce similar survey biomass estimates (Figure 12c-\@ref(fig:fbase)), however the spawning and total biomass estimates increase for each iterative model (Figure 12c-\@ref(fig:fbasebio)).  
+Since the most appropriate survey inputs exclude the 1980s data, m15.5a is dropped from review in favor of m22, these are the same models with m22 using survey data from 1990+.
+Increasing the length composition data by 5 cm (m22.1) produces the same survey biomass estimates as m22 (Figure 12c-\@ref(fig:fm22l)) and slightly decreases the overall spawning and total biomass estimates from m22 (Figure 12c-\@ref(fig:fm22lbio)). 
+
+Similar results are observed when the age-plus group in increased by 5 ages to age-30. 
+The estimates of survey biomass are the same between m22.1 and m22.2 (Figure 12c-\@ref(fig:fm22a)) though the spawning and total biomass increase (Figure 12c-\@ref(fig:fm22abio)).
+The same results are observed when both the age and length plus groups are increased (not shown).
+
+Changing to a VAST lognormal error structure produces a different survey estimate, with the most noticeable differences being the decreased annual variability in VAST model inputs and a decreases from the 2019 etsimate to the 2021 estimate (Figure 12c-\@ref(fig:fm22log)).
+The spawning and total biomass are decreased from m22 (Figure 12c-\@ref(fig:fm22logbio)).
+
+Similar results are observed when the length plus group is increase (Figures 12c-\@ref(fig:fm22logl) and 12c-\@ref(fig:fm22logbiol)), the age plus group is increased (Figures 12c-\@ref(fig:fm22loga) and 12c-\@ref(fig:fm22logbioa)) and when the length and age plus groups are increased (Figures 12c-\@ref(fig:fm22logal) and 12c-\@ref(fig:fm22logbioal)).
+
+Examinations or likelihoods and parameter estimates (Tables 12c-\@ref(tab:likeall) and 12c-\@ref(tab:likeall2)) show that overall model likelihoods are similar or follow expected trends (e.g., increase with increased parameterizations) though the introduction of the lognormal error structure in VAST (models with "a") improves the data likelihoods from the base model. 
+The design-based model estimates similar, or lower, data likelihoods. 
+However, the design-based estimates of *q* are substantially higher, an unlikely scenario given understanding that this stock tends to inhabit areas on "untrawlable" habitat.
+
+
+
+\pagebreak
+
+## Tables
+
+```{r likeage}
+data.frame(pars = c("Parameters", NA, "Likelihoods", "Data", "Survey-age", "Fishery-age", "Fishery-length"),
+           Base = c(124, NA, NA, 332.8, 124.8, 32.8, 49.2),
+           Length = c(124, NA, NA, 340.1, 124.4, 32.8, 55.9),
+           Age = c(130, NA, NA, 350.7, 131.9, 38.9, 52.2),
+           `Age/Length` = c(130, NA, NA, 3256.6, 132.1, 38.7, 57.6)) %>% 
+flextable::flextable() %>% 
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  flextable::fontsize(size = 10, part = "all") %>% 
+  flextable::padding(padding = 0.5, part = "all") %>% 
+  flextable::colformat_double(i=1, digit=0 ) %>% 
+  flextable::set_header_labels(values = list(pars = "",
+                                             Age.Length = "Age/Length")) %>% 
+  flextable::hline(i=3) %>% 
+  flextable::width(j=1, 1) %>% 
+  flextable::autofit() %>% 
+  flextable::set_caption("Model likelihoods for increased age and length composition data.")
+```  
+
+```{r likeall}
+read.csv(here::here(year, "data", "user_input", "likeall.csv")) %>%
+  flextable::flextable() %>% 
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  flextable::fontsize(size = 10, part = "all") %>% 
+  flextable::colformat_double(i=c(16, 21:25), digits=0) %>% 
+  flextable::hline(i=c(7,14)) %>% 
+  flextable::autofit() %>% 
+  flextable::align(j=1, part= "all") %>%
+  flextable::padding(padding = 0.4, part = "all") %>%  
+  flextable::set_caption("Likelihood values and estimates of key parameters for a select few models for GOA dusky rockfish.")
+
+```
+
+```{r likeall2}
+read.csv(here::here(year, "data", "user_input", "likeall2.csv")) %>%
+  flextable::flextable() %>% 
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  flextable::fontsize(size = 10, part = "all") %>% 
+  flextable::colformat_double(i=c(16, 21:25), digits=0) %>% 
+  flextable::hline(i=c(7,14)) %>% 
+  flextable::autofit() %>% 
+  flextable::align(j=1, part= "all") %>%
+  flextable::padding(padding = 0.4, part = "all") %>%  
+  flextable::set_caption("Likelihood values and estimates of key parameters for design-based survey inputs for GOA dusky rockfish.")
+
+```
+
+\pagebreak
+
+## Figures
+
+```{r vastbio, fig.cap="Observed VAST (points) and predicted (lines) GOA dusky rockfish trawl survey biomass based on the 2020 recommended model. Error bars are approximate asymptotic 95% confidence intervals of model error."}
+knitr::include_graphics(here::here(year, "figs", "srv_bio.png"))
+```
+
+```{r vast-bioa, fig.cap="High variability observed VAST inputs (points) and assessment estimates (lines) GOA dusky rockfish trawl survey biomass based on the 2020 recommended model. Error bars are approximate asymptotic 95% confidence intervals of model error."}
+knitr::include_graphics(here::here(year, "figs", "srv_bioa.png"))
+```
+
+```{r vast-biob, fig.cap="Lower variability observed VAST inputs (points) and assessment estimates (lines) GOA dusky rockfish trawl survey biomass based on the 2020 recommended model. Error bars are approximate asymptotic 95% confidence intervals of model error. Note: the VAST model A would included as a comparison to the default."}
+knitr::include_graphics(here::here(year, "figs", "srv_biob.png"))
+```
+
+```{r vast-tot, fig.cap="Spawning and total biomass estimates using different VAST inputs for GOA dusky rockfish trawl survey biomass based on the 2022 recommended model."}
+knitr::include_graphics(here::here(year, "figs", "tot_bio.png"))
+```
+
+
+```{r vast-tota, fig.cap="Spawning and total biomass estimates using high variability VAST inputs for GOA dusky rockfish trawl survey biomass based on the 2022 recommended model."}
+knitr::include_graphics(here::here(year, "figs", "tot_bioa.png"))
+```
+
+
+```{r vast-totb, fig.cap="Spawning and total biomass estimates using lower variability VAST inputs for GOA dusky rockfish trawl survey biomass based on the 2022 recommended model. Note: the VAST model A (default) is included as a comparison."}
+knitr::include_graphics(here::here(year, "figs", "tot_biob.png"))
+```
+
+```{r vast-residb, fig.cap="Default VAST model (B) residual diagnostics plot."}
+knitr::include_graphics(here::here(year, "figs", "modb-resid.png"))
+```
+VAST model E (lognormal) model residuals. 
+
+```{r vast-reside, fig.cap="Lognormal error VAST model (E) residual diagnostics plot."}
+knitr::include_graphics(here::here(year, "figs", "mode-resid.png"))
+```
+
+
+```{r lplus, fig.cap="Fishery length composition plus group and model fittings for the default (47 cm) and increased (52 cm) plus groupings."}
+knitr::include_graphics(here::here(year, "figs", "lplus.png"))
+```
+
+```{r slplus, fig.cap="Survey length composition plus group for the default (47 cm) and increased (52 cm) plus groupings. Note: not fit in the model."}
+knitr::include_graphics(here::here(year, "figs", "slplus.png"))
+```
+
+```{r lbio, fig.cap="Spawning and total biomass for the base model and increased length plus group models."}
+knitr::include_graphics(here::here(year, "figs", "biol.png"))
+```
+
+```{r aplus, fig.cap="Survey age composition plus group and model fittings for the default (age-25) and increased (age-30) plus groupings."}
+knitr::include_graphics(here::here(year, "figs", "aplus.png"))
+```
+
+```{r faplus, fig.cap="Fishery age composition plus group and model fittings for the default (age-25) and increased (age-30) plus groupings."}
+knitr::include_graphics(here::here(year, "figs", "faplus.png"))
+```
+
+```{r abio, fig.cap="Spawning and total biomass for the base model and increased age plus group models."}
+knitr::include_graphics(here::here(year, "figs", "bioa.png"))
+```
+
+```{r fdbcompare, fig.cap="Design-based trawl survey inputs and model results."}
+knitr::include_graphics(here::here(year, "figs", "fdbcompare.png"))
+```
+
+```{r fdbbio, fig.cap="Spawning and total biomass results using different model structures with a design-based trawl survey input"}
+knitr::include_graphics(here::here(year, "figs", "fdbbio.png"))
+```
+
+```{r fbase, fig.cap="Design-based and VAST trawl survey inputs and model results."}
+knitr::include_graphics(here::here(year, "figs", "fbase.png"))
+```
+
+```{r fbasebio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST trawl survey input"}
+knitr::include_graphics(here::here(year, "figs", "fbasebio.png"))
+```
+
+
+```{r fm22l, fig.cap="Design-based and VAST trawl survey inputs and model results."}
+knitr::include_graphics(here::here(year, "figs", "fm22l.png"))
+```
+
+```{r fm22lbio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST trawl survey input"}
+knitr::include_graphics(here::here(year, "figs", "fm22lbio.png"))
+```
+```{r fm22a, fig.cap="Design-based and VAST trawl survey inputs and model results."}
+knitr::include_graphics(here::here(year, "figs", "fm22a.png"))
+```
+
+```{r fm22abio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST trawl survey input"}
+knitr::include_graphics(here::here(year, "figs", "fm22abio.png"))
+```
+
+Similar results are observed when both the age and length composition data plus groups are increased (Figures 12c-\@ref(fig:fm22al) and 12c-\@ref(fig:fm22albio)) .
+
+```{r fm22al, fig.cap="Design-based and VAST trawl survey inputs and model results."}
+knitr::include_graphics(here::here(year, "figs", "fm22al.png"))
+```
+
+```{r fm22albio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST trawl survey input"}
+knitr::include_graphics(here::here(year, "figs", "fm22albio.png"))
+```
+
+```{r fm22log, fig.cap="Design-based and VAST (lognormal) trawl survey inputs and model results."}
+knitr::include_graphics(here::here(year, "figs", "fm22log.png"))
+```
+
+```{r fm22logbio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST (lognormal) trawl survey input."}
+knitr::include_graphics(here::here(year, "figs", "fm22logbio.png"))
+```
+
+```{r fm22logl, fig.cap="Design-based and VAST (lognormal) trawl survey inputs and model results with increased length plus group."}
+knitr::include_graphics(here::here(year, "figs", "fm22logl.png"))
+```
+
+```{r fm22logbiol, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST (lognormal) trawl survey input with increased length plus group."}
+knitr::include_graphics(here::here(year, "figs", "fm22logbiol.png"))
+```
+
+```{r fm22loga, fig.cap="Design-based and VAST (lognormal) trawl survey inputs and model results with increased age plus group."}
+knitr::include_graphics(here::here(year, "figs", "fm22loga.png"))
+```
+
+```{r fm22logbioa, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST (lognormal) trawl survey input with increased age plus group"}
+knitr::include_graphics(here::here(year, "figs", "fm22logbioa.png"))
+```
+
+```{r fm22logal, fig.cap="Design-based and VAST (lognormal) trawl survey inputs and model results with increased age and length plus groups."}
+knitr::include_graphics(here::here(year, "figs", "fm22logal.png"))
+```
+
+```{r fm22logbioal, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST (lognormal) trawl survey input with increased age and length plus groups."}
+knitr::include_graphics(here::here(year, "figs", "fm22logbioal.png"))
+```
