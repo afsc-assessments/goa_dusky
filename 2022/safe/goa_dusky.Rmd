@@ -5,7 +5,7 @@ params:
   species_complex: "no"
   area: "Gulf of Alaska"
   tier: 3
-author: "Benjamin C. Williams, Peter-John F. Hulson, Chris R Lunsford, and Bridget Ferris"
+author: "Benjamin C. Williams, Peter-John F. Hulson, Chris R Lunsford, and Bridget Ferriss"
 date: "November 2022"
 
 # don't do anything below this line unless you are cool with the consequences
@@ -72,7 +72,7 @@ year = 2022
 date = 'October 22, 2022'
 model = "base"
 end_proj = year + 15
-best_f = 0.0641 # from the best_f function in groundfishr package
+best_f = 0.0985 # from the best_f function in groundfishr package
 
 mohn = -0.123
 tot_mohn = -0.115

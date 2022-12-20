@@ -6,11 +6,38 @@ This includes removals incurred during research, subsistence, personal use, recr
 For Gulf of Alaska (GOA) dusky rockfish, these estimates can be compared to the research removals reported in previous assessments (Heifetz et al. 2009; Table 10 A-1). 
 Northern rockfish research removals are minimal relative to the fishery catch and compared to the research removals of other species. The majority of research removals are taken by the Alaska Fisheries Science Center’s (AFSC) biennial bottom trawl survey which is the primary research survey used for assessing the population status of dusky rockfish in the GOA. 
 Other research activities that harvest dusky rockfish include longline surveys by the International Pacific Halibut Commission and the AFSC and the State of Alaska’s trawl surveys. 
-Recreational harvest of dusky rockfish rarely occurs. 
-Total removals from activities other than a directed fishery have been near 10 t for 2010--2017. 
-The 2017 other removals is <1% of the 2018 recommended ABC of 4,529 t and represents a very low risk to the dusky rockfish stock. Research harvests from trawl in recent years are higher in odd years due to the biennial cycle of the AFSC bottom trawl survey in the GOA and have been less than 10 t except in 2013 when 18 t were removed. 
+Recreational harvest of dusky rockfish is variable, though typically below 20 t. 
+Total removals from activities other than a directed fishery have been near 10-20 t for 2010--2021. 
+Research harvests from trawl in recent years are higher in odd years due to the biennial cycle of the AFSC bottom trawl survey in the GOA. 
 These removals do not pose a significant risk to the dusky rockfish stock in the GOA.
 
 ## References {-}
 
 Heifetz, J., D. Hanselman, J. N. Ianelli, S. K. Shotwell, and C. Tribuzio. 2009. Gulf of Alaska dusky rockfish. In Stock assessment and fishery evaluation report for the groundfish resources of the Gulf of Alaska as projected for 2010. North Pacific Fishery Management Council, 605 W 4th Ave, Suite 306 Anchorage, AK 99501. pp. 817-874.
+
+
+```{r noncomm}
+read.csv(here::here(year, "data", "user_input", "non_comm_catch.csv")) %>% 
+  dplyr::rename_all(tolower) %>% 
+  dplyr::select(Year = collection.year, agency = collection.agency, fishery=collection.name,
+                gear = obs.gear.code, weight = weight) %>% 
+  
+  dplyr::mutate(srv = dplyr::case_when(fishery =="Sport Fishery" ~ 'Recreational',
+                                       gear==1 ~ "Trawl",
+                                       TRUE ~ "Other")) %>% 
+  group_by(Year, srv) %>% 
+  # mutate(id = 1:n()) %>% 
+  dplyr::summarise(weight = round(sum(weight/1000))) %>% 
+  tidyr::pivot_wider(names_from = srv, values_from = weight) %>% 
+  dplyr::mutate(Total = sum(Other, Recreational, Trawl)) %>% 
+  dplyr::ungroup() %>% 
+  dplyr::mutate(dplyr::across(dplyr::everything(), ~ifelse(.x==0, "<1", .))) %>% 
+  flextable::flextable() %>% 
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  flextable::fontsize(size = 10, part = "all") %>% 
+  flextable::padding(padding = 0.8, part = "all") %>%
+  flextable::colformat_num(j=1, digit=0 , big.mark = "") %>% 
+  flextable::align(j=1, part = "all") %>% 
+  flextable::align(j=2:4, align = "center", part = "all") %>% 
+  flextable::set_caption("Total removals of Gulf of Alaska dusky rockfish (t) from activities not related to directed fishing, since 2010. Trawl survey sources are a combination of the NMFS echo-integration, State of Alaska small-mesh, GOA bottom trawl surveys, and occasional short-term research projects. Other is longline, personal use, scallop dredge, and subsistence harvest.")
+  ```

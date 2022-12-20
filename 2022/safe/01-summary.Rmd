@@ -10,9 +10,9 @@ Relative to the last full assessment the following substantive changes have been
 
  - include survey biomass estimates for `r year-1`, 
  - update survey age compositions with `r year-1` data, 
- - update fishery age compositions with `r year-2` data,  
+ - update fishery age compositions with `r year-2` data, 
  - update fishery size compositions with `r year-1` data, and 
- - finale catch values for `r year-2` and `r year-1`, and use preliminary catch for `r year`.
+ - final catch values for `r year-2` and `r year-1`, and use preliminary catch for `r year`.
 
 The survey biomass estimate is based upon the Groundfish Assessment Program’s (GAP) Vector Autoregressive Spatio-temporal (VAST) model for the GOA. 
 The VAST model input deviates slightly from the GAP default settings in that a lognormal error distribution was implemented instead of the gamma distribution (described in more detail in the *Description of Alternative Models* section below).
@@ -70,7 +70,7 @@ The recommended ABC for `r year+1` is `r abc` t, the maximum allowable ABC under
 This ABC is a `r perc`% increase compared to the `r year` ABC of `r abc0` t and a `r perc1`% increase from the projected `r year + 1` ABC from last year. 
 However, the past two years the ABC has been on a "stairstep" incremental increase to adjust for the substantially increased abundance when changing to the VAST model for trawl survey biomass in 2020.  
 The `r year+1` GOA-wide OFL for dusky rockfish is `r ofl` t. 
-
+Comparisons based upon using max ABC would be a 12% increase compared to the 2022 max ABC and a 18% increase from the projected max ABC. The 2023 GOA-wide OFL for dusky rockfish is 9,638 t. 
 The stock is not being subject to overfishing, is not currently overfished, nor is it approaching a condition of being overfished. 
 
 Reference values for dusky rockfish are summarized in the following table:

@@ -24,9 +24,7 @@ data.frame(Model = c("base",
   flextable::fontsize(size = 10)  
 ```
 
-When we present alternative model configurations, our usual criteria for choosing a superior model are: (1) the best overall fit to the data (in terms of negative log-likelihood), (2) biologically reasonable patterns of estimated recruitment, catchabilities, and selectivities, (3) a good visual fit to length and age compositions, and (4) parsimony. 
-We've presented results for multiple models because the 2020 and 2022 models differ in either the geospatial model parameterization or the age and length plus group. 
-The design-based model is presented per SSC request note that m22b is presented as there was little to no difference in biomass eastimates from from iterative model changes using a design-based trawl survey biomass (Appendix 12c).
+When we present alternative model configurations, our usual criteria for choosing a superior model are: (1) the best overall fit to the data (in terms of negative log-likelihood), (2) biologically reasonable patterns of estimated recruitment, catchabilities, and selectivities, (3) a good visual fit to length and age compositions, and (4) parsimony. We’ve presented results for multiple models because the 2020 and 2022 models differ in either the VAST parameterization for index production or the age and length plus group. The design-based model (m22b) is presented per SSC request. Note that there was little to no difference in biomass estimates from iterative model changes using a design-based trawl survey biomass (Appendix 12c). 
 Model m22.3a produces good visual fits to the data, and biologically reasonable patterns of recruitment, abundance, and selectivities. 
 Therefore, the recommended 2022 model is utilizing the new information effectively, and we use it to recommend the `r year+1` ABC and OFL.
 
@@ -42,9 +40,11 @@ Recruitment is measured as number of age four dusky rockfish.
 Fishing mortality is fully-selected *F*, meaning the mortality at the age the fishery has fully selected the fish.
 
 *Biomass and Exploitation Trends*  
+The estimates of current population abundance indicate that it is dominated by fish from the 1993 and 1998 year-classes (Table 12-\@ref(tab:numbers)). 
 The predicted survey biomass generally captures the trend in observed (VAST geospatial model) survey biomass similarly for the preferred and bridge models (Figure12-\@ref(fig:fcomparesrv) and Figure 12-\@ref(fig:fsurvey)), but without matching the interannual variability that is present in observed values. 
 The 2021 observed survey values are greater than the predicted model estimates for all models presented, indicating that the assessment model is tempering the observed increase in variability based on age compositional data.
-However, the model predicted survey biomass estimates for VAST models area quite similar with only the design-based survey estimator producing different results. Spawning biomass estimates are at a timeseries high (\@ref(fig:fcomparebio)). 
+However, the model predicted survey biomass estimates for VAST models are quite similar with only the design-based survey estimator producing different results. 
+Spawning biomass estimates are at a timeseries high (\@ref(fig:fcomparebio)). 
 Total age-4+ biomass estimates for all model using VAST survey inputs indicate a steadily increasing trend with a peak around 2016.
 
 The estimated selectivity curve for the fishery and survey data suggested a pattern similar to previous assessments for dusky rockfish (Figure 12-\@ref(fig:fslx)). 
@@ -53,7 +53,7 @@ Ninety-five percent of dusky rockfish are selected survey by age 10.
 The age at 50% selection is 8.7 for the survey and 10.3 for the fishery.
 
 The fully-selected fishing mortality time series indicates a rise in fishing mortality from late 1980’s through the late 1990’s and has been relatively stable from 2003-2022. 
-Since 2003 fully-selected fishing mortality has ranged between 0.03 and 0.06 (Figure 12-\@ref(fig:fF)). 
+Since 2003 fully-selected fishing mortality has ranged between 0.03 and 0.06 (Figure 12-\@ref(fig:fF)), and the exploitation rate has been generally around the long-term average (Figure 12-\@ref(fig:fcatch-bio)). 
 In 2012, the harvest exceeded TAC in the Western GOA. 
 This occurred in all rockfish fisheries in response to a delayed closing of the fishery. 
 @Goodman2002 suggested that stock assessment authors use a “management path” graph as a way to evaluate management and assessment performance over time. 
@@ -65,11 +65,11 @@ In recent years, dusky rockfish have been above $B_{40\%}$ and below $F_{40\%}$ 
 
 *Recruitment*  
 There is some lack of fit to the fishery size compositions for 1991-1999 (Figure 12-\@ref(fig:ffsc)). 
-This may be due to the increase in size of fish taken by the fishery in those years as mentioned in the Fishery data section. 
+This may be due to the increase in size of fish taken by the fishery in those years as mentioned in the *Fishery data* section. 
 The fishery size composition fits from 2007+ are generally good. 
 In general, the model fits the fishery age compositions well (Figure 12-\@ref(fig:ffac)). 
-Increasing the plus age group to age-30 provides a bit more resolution in the age composition data, while mainatianing similar overall fits to the composition data.
-The strong year classes from 1992 and 1995 have largely moved into the plus age group. 
+Increasing the plus age group to age-30 provides more resolution in the age composition data, while mainatianing similar overall fits to the composition data.
+The strong year classes from 1992 and 1995 have largely moved into the plus age group (Tables 12-\@ref(tab:compare) and 12-\@ref(tab:timseries)). 
 The 2018 age data suggest that there is a large pulse of age 11 fish (with ages 10 and 12 also high) observed in the compositional data and continues to be observed in the 2020 data.
 
 The survey age compositions also track the 1992 year class well and try to fit the 1995 year class, which appeared consistently strong in surveys through 2013 (Figure 12-\@ref(fig:fsac)); in 2015 the model predicted a smaller proportion of fish to be in the plus age group than what was observed in the survey. 
@@ -90,6 +90,10 @@ Table 12-\@ref(tab:mcmcpar) shows the maximum likelihood estimate (MLE) of key p
 The Hessian and MCMC standard deviations are larger for the estimates of *q*, $F_{40\%}$, ABC, and female spawning biomass. 
 These larger standard deviations indicate that these parameters are more uncertain than indicated by the standard estimates. 
 However, all estimates fall within the Bayesian credible intervals.
+
+A within-model retrospective analysis of the recommended model was conducted for the last 10 years of the time-series by dropping data one year at a time. 
+The revised Mohn’s “rho” statistic [@Hanselman2013] in female spawning biomass was -0.123, an improvement from 0.51 in the previous model) indicating that the model increases the estimate of female spawning biomass in recent years as data is added to the assessment. 
+The retrospective female spawning biomass and the relative difference in female spawning biomass from the model in the terminal year are shown in Figures 12-\@ref(fig:fretro) and 12-\@ref(fig:retro-pd) (with 95% credible intervals from MCMC). 
 
 
 

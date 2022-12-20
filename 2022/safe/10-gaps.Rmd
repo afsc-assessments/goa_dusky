@@ -18,4 +18,4 @@ The spatial and temporal extent of skip spawning is unknown and should be a prio
 
 Several techniques are used by stock assessors to determine weight length and age sample sizes in models. 
 Research is currently being conducted to determine the best technique for weighting sample sizes and results should help us in choosing appropriate rationale for model weightings within this assessment.
-Last, an examination of incorprating an error inflation parameter to increase the variance in VAST models and explore the effect low survey model variance has on resulting assessment outputs.
+Last, an examination of incorporating an error inflation parameter to increase the variance in VAST models and explore the effect low survey model variance has on resulting assessment outputs.

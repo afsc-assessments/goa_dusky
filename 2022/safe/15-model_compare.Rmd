@@ -150,7 +150,7 @@ knitr::include_graphics(here::here(year, "figs", "tot_biob.png"))
 ```{r vast-residb, fig.cap="Default VAST model (B) residual diagnostics plot."}
 knitr::include_graphics(here::here(year, "figs", "modb-resid.png"))
 ```
-VAST model E (lognormal) model residuals. 
+
 
 ```{r vast-reside, fig.cap="Lognormal error VAST model (E) residual diagnostics plot."}
 knitr::include_graphics(here::here(year, "figs", "mode-resid.png"))
@@ -202,24 +202,22 @@ knitr::include_graphics(here::here(year, "figs", "fbasebio.png"))
 knitr::include_graphics(here::here(year, "figs", "fm22l.png"))
 ```
 
-```{r fm22lbio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST trawl survey input"}
+```{r fm22lbio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST trawl survey input."}
 knitr::include_graphics(here::here(year, "figs", "fm22lbio.png"))
 ```
 ```{r fm22a, fig.cap="Design-based and VAST trawl survey inputs and model results."}
 knitr::include_graphics(here::here(year, "figs", "fm22a.png"))
 ```
 
-```{r fm22abio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST trawl survey input"}
+```{r fm22abio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST trawl survey input."}
 knitr::include_graphics(here::here(year, "figs", "fm22abio.png"))
 ```
-
-Similar results are observed when both the age and length composition data plus groups are increased (Figures 12c-\@ref(fig:fm22al) and 12c-\@ref(fig:fm22albio)) .
 
 ```{r fm22al, fig.cap="Design-based and VAST trawl survey inputs and model results."}
 knitr::include_graphics(here::here(year, "figs", "fm22al.png"))
 ```
 
-```{r fm22albio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST trawl survey input"}
+```{r fm22albio, fig.cap="Spawning and total biomass results using different model structures with a design-based or VAST trawl survey input."}
 knitr::include_graphics(here::here(year, "figs", "fm22albio.png"))
 ```
 

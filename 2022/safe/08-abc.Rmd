@@ -5,7 +5,7 @@
 Amendment 56 to the GOA Groundfish Fishery Management Plan defines the “overfishing level”
 (OFL), the fishing mortality rate used to set OFL ($F_{OFL}$), the maximum permissible ABC, and the fishing mortality rate used to set the maximum permissible ABC. 
 The fishing mortality rate used to set ABC ($F_{ABC}$) may be less than this maximum permissible level, but not greater. 
-Because reliable estimates of reference points related to maximum sustainable yield (MSY) are currently not available but reliable estimates of reference points related to spawning per recruit are available, Northern rockfish in the GOA are managed under Tier 3 of Amendment 56. 
+Because reliable estimates of reference points related to maximum sustainable yield (MSY) are currently not available but reliable estimates of reference points related to spawning per recruit are available, dusky rockfish in the GOA are managed under Tier 3 of Amendment 56. 
 Tier 3 uses the following reference points: $B_{40\%}$, equal to 40% of the equilibrium spawning biomass that would be obtained in the absence of fishing; $F_{35\%}$,,equal to the fishing mortality rate that reduces the equilibrium level of spawning per recruit to 35% of the level that would be obtained in the absence of fishing; and $F_{40\%}$, equal to the fishing mortality rate that reduces the equilibrium level of spawning per recruit to 40% of the level that would be obtained in the absence of fishing.
 Estimation of the $B_{40\%}$ reference point requires an assumption regarding the equilibrium level of recruitment. 
 In this assessment, it is assumed that the equilibrium level of recruitment is equal to the average of age-2 recruitments between 1979 and `r year - 2`. 
@@ -120,6 +120,12 @@ data.frame(level = c("Level 1: Normal",
 The table is applied by evaluating the severity of four types of considerations that could be used to support a scientific recommendation to reduce the ABC from the maximum permissible. 
 These considerations are stock assessment considerations, population dynamics considerations, environmental/ecosystem considerations, and fishery performance. 
 Examples of the types of concerns that might be relevant include the following: 
+
+1. “Assessment considerations—data-inputs: biased ages, skipped surveys, lack of fishery-independent trend data; model fits: poor fits to fits to fishery or survey data, inability to simultaneously fit multiple data inputs; model performance: poor model convergence, multiple minima in the likelihood surface, parameters hitting bounds; estimation uncertainty: poorly-estimated but influential year classes; retrospective bias in biomass estimates.
+  2. “Population dynamics considerations—decreasing biomass trend, poor recent recruitment, inability of the stock to rebuild, abrupt increase or decrease in stock abundance.
+  3. “Environmental/ecosystem considerations—adverse trends in environmental/ecosystem indicators, ecosystem model results, decreases in ecosystem productivity, decreases in prey abundance or availability, increases or increases in predator abundance or productivity.
+  4. “Fishery performance—fishery CPUE is showing a contrasting pattern from the stock biomass trend, unusual spatial pattern of fishing, changes in the percent of TAC taken, changes in the duration of fishery openings.”
+
 
 #### Assessment considerations
 

@@ -46,9 +46,9 @@ Table 12-\@ref(tab:fac) depicts the raw age distribution of the samples without 
 However, the samples were randomly collected from fish in over 100 hauls that had large catches of dusky rockfish, therefore the raw distribution is likely representative of the true age composition of the fishery. 
 Fish ranged in age from 4 to 66 years. 
 The mode has decreased recently from 14-15 years old in 2012-2016 to 11-13 years old in 2018 and 2020.
-Several large and relatively steady year classes are evident through the time series including 1986, 1992, 1995, and 1999 ref (Figure 12-\@ref(fig:ffac)).
+Several large and relatively steady year classes are evident through the time series including 1986, 1992, 1995, and 1999 (Figure 12-\@ref(fig:ffac)).
 
-Length frequency data for dusky rockfish in the commercial fishery are available for the years 1991-`r year-1` but are only used in the model when age compositions are not expected to be available for that year (Table 12-\@ref(tab:fsc). 
+Length frequency data for dusky rockfish in the commercial fishery are available for the years 1991-`r year-1` but are only used in the model when age compositions are not expected to be available for that year (Table 12-\@ref(tab:fsc)). 
 These data are the raw length frequencies for all dusky rockfish measured by observers in a given year. 
 Generally, these lengths were taken from hauls in which dusky rockfish were either the target or a dominant species, and they provide an indication of the trend in size composition for the fishery. 
 The relatively small sample sizes in 1995 and 1996 should be treated with caution as all years, though they are included in these analyses. 

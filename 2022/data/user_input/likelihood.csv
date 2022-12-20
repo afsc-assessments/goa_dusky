@@ -1,0 +1,27 @@
+Likelihoods,base,m22,m22.3a
+Catch,26.96,25.06,25.72
+Survey biomass,98.95,74.21,30.03
+Fishery ages,32.84,36.60,41.52
+Survey ages,124.75,130.01,138.14
+Fishery lengths,49.29,53.82,60.03
+Maturity,65.00,65.00,65.00
+Data,332.80,319.70,295.43
+,,,
+Penalties/Priors,,,
+Recruitment devs,38.83,41.34,36.21
+F regularity,31.62,32.60,33.98
+sigr prior,0.25,0.22,0.41
+q prior,0.32,0.64,0.50
+Objective function,468.81,459.28,431.13
+,,,
+Parameter estimates,,,
+# parameters ,124.00,128.00,133.00
+q,0.70,0.60,0.64
+sigr,1.10,1.12,1.00
+rec,2.22,0.90,0.99
+F40,0.93,0.09,0.09
+Projected total biomass,97702.00,110493.00,107160.00
+Projected spawning biomass,38362.00,46083.00,44495.00
+B100,60855.00,67517.00,65565.00
+B40,24342.00,27007.00,26226.00
+ABC,7101.00,8187.00,7917.00
