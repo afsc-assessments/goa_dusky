@@ -1,5 +1,5 @@
 // 
-// statistical, seperable age-structured population model for GOA dusky rockfish
+// statistical, separable age-structured population model for GOA dusky rockfish
 // based upon previous "base" model though has 1,150 fewer lines
 // ben.williams@noaa.gov
 // 2023-08
