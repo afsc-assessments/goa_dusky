@@ -1,4 +1,6 @@
 # load ----
+# remotes::install_github("BenWilliams-NOAA/afscassess")
+# remotes::install_github("afsc-assessments/afscdata")
 # devtools::unload("afscassess")
 library(afscdata)
 library(afscassess)
@@ -11,7 +13,7 @@ TAC <- c(3676, 5389, 5372)
 
 
 # setup
-setup_folders(year)
+# setup_folders(year)
 accepted_model(2022, "m22.3a", year)
 
 # data ----
@@ -27,3 +29,4 @@ proj_ak(year=year, last_full_assess=2022, folder="harvest_proj", species="dusky"
 # setup for next year
 setup_folders(year+1)
 accepted_model(2022, "m22.3a", year +1)
+
