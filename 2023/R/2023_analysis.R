@@ -22,6 +22,7 @@ accepted_model(2022, "m22.3a", year)
 # data ----
 goa_dusk(year, off_yr = TRUE)
 clean_catch(year, species=species, TAC=TAC)
+
 bts_biomass(year=year, area=area, rmv_yrs=c(1984,1987)) # design-based
 bts_biomass(year=year, area=area, rmv_yrs=c(1984,1987), file="vast_lognormal.csv", id="vast") # 2021 vast model
 
@@ -107,5 +108,8 @@ vast  %>%
   afscassess::theme_report() +
   ggplot2::theme(legend.position = c(0.2, 0.8))
 
-dev.off()
+
+# setup for next year
+setup_folders(year+1)
+accepted_model(2022, "m22.3a", year +1)
 
