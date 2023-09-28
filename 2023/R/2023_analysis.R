@@ -5,6 +5,7 @@
 # devtools::unload("afscassess")
 library(afscdata)
 library(afscassess)
+library(tidyverse)
 
 # globals ----
 year = 2023
@@ -17,7 +18,7 @@ TAC <- c(3676, 5389, 5372)
 
 # setup
 # setup_folders(year)
-accepted_model(2022, "m22.3a", year)
+accepted_model(2022, "m22.3a", year) # don't run if already setup
 
 # data ----
 goa_dusk(year, off_yr = TRUE)

@@ -1,19 +1,19 @@
 item,y3,y4
 M (natural mortality),0.07,0.07
 Tier,3a,3a
-Projected total (age 4+) biomass (t),102740, 99359
-Projected female spawning biomass (t),42581,40210
+Projected total (age 4+) biomass (t),107160, 104627
+Projected female spawning biomass (t),44651,44651
 B100%,65565,65565
 B40%,26226,26226
 B35%,22948,22948
-FOFL,0.013,0.013
-maxFABC,0.009,0.009
-FABC,0.009,0.009
-OFL (t),9154,8647
-maxABC (t),7520,7103
-ABC (t),7520,7103
+FOFL,0.11,0.11
+maxFABC,0.09,0.09
+FABC,0.09,0.09
+OFL (t),9638,9154
+maxABC (t),7917,7520
+ABC (t),7917,7520
 blank,NA,NA
-Status,2022,2023
+Status,2023,2024
 Overfishing,NA,NA
 Overfished,NA,NA
 Approaching overfished,NA,NA
