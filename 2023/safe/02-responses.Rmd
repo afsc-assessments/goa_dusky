@@ -3,7 +3,7 @@
 
 > “The SSC supports the JGPT’s recommendation that stock assessment authors transition from the ADMB RE variants to the rema framework, which implements the same model variants in a single framework with several improvements.”(SSC, Oct 2022)  
 
-Apportionment method in this harvest projection was not updated from last year’s assessment. However, in future assessments apportionment will be transitioned to the rema framework or further explore the possibility of using VAST (see comment below). 
+The REMA model is currently used for catch apportionment to management areas. However, further exploration using VAST for apportionment is being pursued. 
 
 ## Responses to SSC and Plan Team Comments Specific to this Assessment
 

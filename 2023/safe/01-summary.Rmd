@@ -4,7 +4,7 @@ Gulf of Alaska (GOA) dusky rockfish (*Sebastes variabilis*) have historically be
 In 2017, the Alaska Fisheries Science Center (AFSC) participated in a stock assessment prioritization process. 
 It was recommended that the GOA dusky rockfish remain on a biennial stock assessment schedule with a full stock assessment produced in even years and a harvest projection produced in odd years. 
 The projection model is updated with new catch information and results are used to recommend harvest levels for the next two years.
-This incorporates the most current catch information without re-estimating model parameters and biological reference points. The last full assessment in 2022 can be found here.
+This incorporates the most current catch information without re-estimating model parameters and biological reference points.
 
 The GOA dusky rockfish is classified as a Tier 3 stock and is assessed using a statistical age-structure model. 
 This assessment consists of a population model, which uses survey and fishery data to generate a historical time series of population estimates, and a projection model, which uses results from the population model to predict future population estimates and recommended harvest levels. 
