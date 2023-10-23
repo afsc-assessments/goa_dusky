@@ -28,13 +28,13 @@ There were no changes from the 2022 assessment [@Williams2022] as this was an of
 The projected total biomass for `r year+1` is `r tot` t. 
 The recommend ABC for `r year+1` is `r abc` t, the maximum allowable ABC under Tier `r tier`.
 This ABC is a `r perc`% `r ifelse(perc>0, "increase", "decrease")` compared to the `r year` ABC of `r abc0` and a `r perc1`% `r ifelse(perc1>0, "increase", "decrease")` from the projected `r year+1` ABC from the last year's assessment.
-The "stairstep" in the ABC due to the substantial increase in estimated abundance was completed last assessment cycle in 2022; thus, the ABC from this year does not reflect the "stairstep" approach.
+
 
 The 2024 GOA-wide OFL for dusky rockfish is `r ofl` t.
 
 The stock is not being subject to overfishing, is not currently overfished, nor is it approaching a condition of being overfished. 
 
-Reference values for dusky rockfish are summarized in the following table:
+Reference values for dusky rockfish are summarized in the following table with the recommended OFL and ABC in bold:
 
 
 ```{r, child= "01a-main_table.Rmd", eval = T}
