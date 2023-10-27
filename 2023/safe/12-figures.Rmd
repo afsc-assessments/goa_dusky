@@ -1,6 +1,6 @@
 # Figures
 
-```{r fig1, fig.cap = "Line plot of catch divided by age 4+ total biomass estimates of abundance for Gulf of Alaska dusky rockfish." ,fig.cap="Gulf of Alaska dusky rockfish catch/age 4+ biomass ratio with approximate 95\\% confidence intervals. Observed catch values were used for 1991-2022, the 2023 catch values were estimated using an expansion factor. The horizontal dashed line is the mean value for the entire dataset."}
+```{r fig1, fig.cap="Gulf of Alaska dusky rockfish catch/age 4+ biomass ratio with approximate 95\\% confidence intervals. Observed catch values were used for 1991-2022, the 2023 catch values were estimated using an expansion factor. The horizontal dashed line is the mean value for the entire dataset."}
 
 knitr::include_graphics(here::here(year, "figs", "catch_bio.png"))
 ```

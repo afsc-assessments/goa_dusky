@@ -3,7 +3,8 @@
 
 > “The SSC supports the JGPT’s recommendation that stock assessment authors transition from the ADMB RE variants to the rema framework, which implements the same model variants in a single framework with several improvements.”(SSC, Oct 2022)  
 
-The REMA model is currently used for catch apportionment to management areas. However, the current REMA model uses design-based regional survey biomass estimates as inputs. As this assessment uses VAST estimated survey biomass (i.e., model-based estimates), instead of design-based, examinations of changing to regional VAST biomass estimates as inputsto the REMA model will be explored in the next full assessment.
+The REMA model is currently used for catch apportionment to management areas. 
+However, the current REMA model uses design-based regional survey biomass estimates as inputs. As this assessment uses VAST estimated survey biomass (i.e., model-based estimates), instead of design-based, examinations of changing to regional VAST biomass estimates as inputs to the REMA model will be explored in the next full assessment.
 
 ## Responses to SSC and Plan Team Comments Specific to this Assessment
 
