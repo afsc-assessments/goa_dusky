@@ -1,6 +1,146 @@
+# Files and folders to exclude from github
+# (originally from Jane)
+
+# R projects
+.Rproj
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-*2023/clean
-*2023/tmb
+*extra_docs
+#*2023/clean
+#*2023/tmb
+
+#previous folders already uploaded
+extra_docs
+2021
+2022
+2023
+#*2023/clean
+#*2023/tmb
+
+#new folders that won't be uploaded
+*2024/alt_models_september
+*2024/dev
+*2024/safe
+*2024/safe_dev
+*2024/sept_pt
+*2024/nov_pt
+*2024/base/figs
+*2024/base/mcmc
+*2024/base/tables
+*2024/base/processed
+*2024/data/raw
+*2024/m22.5a/apport/_btsobs_apportionment_beta
+
+
+
+# single files to exclude
+2024/data/user_input/non_comm_catch.csv
+
+# usernames and passwords for db connections
+database.csv
+
+# confidential fishery dependent data
+*confidential*
+
+# any temporary or to delete files
+*tmp*
+*delete*
+*temp*
+
+
+# old assessment archive
+archive
+
+# other rockfish photos for presentations
+photos
+
+# safe documents
+safe
+
+# ADMB files
+.b0
+*.bar
+*.cov
+*.dep
+*.hes
+*.tmp
+*.log
+*.bar
+*.cor
+*.cout
+*.cpp
+*.ecm
+*.eva
+*.exe
+*.hst
+*.htp
+*.mc2
+*.mcm
+*.obj
+*.p01
+#*.par
+*.psv
+#*.rep
+*.std
+*.out
+*.ps
+dgs2
+diags
+*.b0*
+*.p0*
+*.r0*
+*.prf
+*.r02
+*.plt
+*.pin
+*.obj
+*.htp
+gradient.*
+*_in.ctl
+*_in.dat
+# Added for MCMC runs
+adaptation.csv
+# *xx* means finding those words
+*ppl.csv*
+unbounded.csv
+init.pin
+variance
+sims
+
+# other file types we don't want to track
+*.xlsx
+*.xlsm
+*.docx
+*.pptx
+*.png
+*.Rdata
+*.html
+
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Latex files
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.nav
+*.toc
+*.snm
+*.vrb
+*.tex.bak
+*.bak
+auto/
+
+*.Ink
+
+#tmb
+*.o
+*.dll
+
+#vast
+*.RDS
+*.RDATA
