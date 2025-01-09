@@ -1217,7 +1217,9 @@ REPORT_SECTION
   if (last_phase())
     write_proj();
 // Output file (tem.rep) which is loaded into R for data outputs
- 
+
+  save_gradients(gradients);
+
   report<<"****Executive Summary Material*****"<<endl;
 
   report<<"     Model name"     <<endl;

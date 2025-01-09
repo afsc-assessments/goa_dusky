@@ -1,0 +1,29 @@
+Likelihood,base,m22.3a,m22.5a
+Catch,25.72,26.41,27.65
+Trawl survey,30.03,32.12,-13.32
+Fishery ages,41.52,48.32,48.14
+Survey ages,138.14,139.26,139
+Fishery lengths,60.03,49.68,49.72
+Recruitment devs,36.21,33.43,28.6
+Maturity,65,65,65
+Data LL,295.43,295.79,251.19
+Total LL,431.54,429.82,380.46
+,,,
+Penalties/Priors,base,m22.3a,m22.5a
+priors sigr,0.41,0.51,0.66
+priors q TWL,0.5,0.53,0.19
+Fishing_Mortality_Regularity_Penalty,33.98,34.56,34.82
+obj_fun,431.54,429.82,380.46
+,,,
+Parameter Estimates,base,m22.3a,m22.5a
+# parameters,133,137,137
+sigmaR,1.00,0.96,0.90
+q,0.64,0.63,0.76
+avg rec,2.70,2.82,2.84
+a50,10.23,10.04,10.06
+F40,0.09,0.09,0.09
+Total Biomass,107186,97325,85862
+SSB,44468,41170,35972
+B100,65565,62394,59467
+B40,26226,24958,23787
+ABC,7921,7247,6338

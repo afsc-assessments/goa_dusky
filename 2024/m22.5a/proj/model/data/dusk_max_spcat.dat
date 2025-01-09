@@ -1,0 +1,15 @@
+#_Number_of_years with specified catch
+1
+# Number of species
+1
+# dat file for each species
+data/dusk.dat
+# ABC multiplier
+1
+# Population scalar
+1000
+# Number of TAC model categories
+1
+# TAC model indices (for aggregating)
+1
+2024	2198.87712888573 # Catch for 2024 Estimated from catch thru 2024-10-08

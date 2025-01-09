@@ -1378,6 +1378,7 @@ void model_parameters::report(const dvector& gradients)
   cout<<"-------------Finished: "<<current_phase()<<" "<<Like<<" "<<age_like<<endl;
   if (last_phase())
     write_proj();
+  save_gradients(gradients);
   report<<"****Executive Summary Material*****"<<endl;
   report<<"     Model name"     <<endl;
   report<<model_name<<endl;
