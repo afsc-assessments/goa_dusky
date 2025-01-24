@@ -37,8 +37,6 @@ dat_name = "goa_dusk"
 '%nin%' <- Negate('%in%')
 
 keyring::key_list()
-#reset password
-#keyring::key_set_with_value(service = "afsc", username = "KOMORI", password ="")
 akfin_user = keyring::key_list("akfin")$username
 akfin_pwd = keyring::key_get("akfin", keyring::key_list("akfin")$username)
 afsc_user = keyring::key_list("afsc")$username
